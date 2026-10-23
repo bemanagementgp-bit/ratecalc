@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Freelance Hourly Rate Calculator – Find Your Ideal Rate (Free) | RateCalc</title>
+  <meta name="description" content="Free freelance hourly rate calculator. Enter your target income, expenses, taxes and billable hours to get the hourly, daily and project rate you actually need to charge.">
+  <link rel="canonical" href="https://__SITE_URL__/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Freelance Hourly Rate Calculator – Find Your Ideal Rate (Free) | RateCalc">
+  <meta property="og:description" content="Work out the freelance hourly rate you really need: income goal, expenses, taxes, buffer and billable hours. Instant results, project quotes and a shareable link.">
+  <meta property="og:url" content="https://__SITE_URL__/">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://__SITE_URL__/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Freelance Hourly Rate Calculator – RateCalc">
+  <meta name="twitter:description" content="Find the hourly rate you need to hit your income goal after taxes, expenses and non-billable time. Free, private, runs in your browser.">
+  <meta name="twitter:image" content="https://__SITE_URL__/favicon.svg">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "RateCalc – Freelance Hourly Rate Calculator",
+    "url": "https://__SITE_URL__/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Free freelance hourly rate calculator that turns your income goal, expenses, tax rate and billable hours into the hourly, daily and project rates you need to charge.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": [
+      "Hourly, daily, weekly and monthly rate targets",
+      "Revenue breakdown: take-home, taxes, expenses, buffer",
+      "Project quote helper with rush multiplier",
+      "Shareable link and copyable summary",
+      "Saved rate profiles and printable rate report (Pro)"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the freelance hourly rate calculator work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It starts from the take-home income you want, adds the taxes you will owe on it, adds your annual business expenses and a profit buffer, then divides that gross revenue by the number of hours you can realistically bill in a year (billable hours per day × working days per week × working weeks). The result is the minimum hourly rate that gets you to your goal." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good freelance hourly rate?",
+        "acceptedAnswer": { "@type": "Answer", "text": "There is no universal number. A good rate is one that covers your target income, taxes, expenses and unpaid time, and that your market will pay. As a rough sanity check, many freelancers land between 1.5× and 3× the hourly equivalent of a comparable salaried job, because they must cover benefits, downtime and overhead themselves. Use the calculator for your floor, then adjust upward for experience, specialisation and demand." }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I charge hourly or per project?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Hourly billing is simplest for open-ended or poorly defined work. Fixed project pricing rewards you for being efficient and is easier for clients to approve, but you carry the risk of underestimating. Many freelancers compute a fixed price from estimated hours × hourly rate, then add a margin for value and risk. The project quote helper in this tool does exactly that." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many hours a year can a freelancer actually bill?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Far fewer than 2,080. Between finding clients, admin, invoicing, learning and gaps between projects, most full-time freelancers bill 1,000 to 1,400 hours per year — roughly 4 to 6 billable hours per working day. The calculator defaults to 5 billable hours a day, 5 days a week and 6 weeks off, which comes to 1,150 billable hours." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to include taxes in my hourly rate?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. As a freelancer nobody withholds tax for you, so your rate must cover income tax, self-employment or social contributions and any local business taxes. Enter your effective (blended) tax rate as a percentage and the calculator grosses up your income so that what is left after tax matches your goal." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the freelance rate calculator free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. All calculations, the project quote helper, copy summary and share link are free with no sign-up, and everything runs in your browser. An optional one-time Pro upgrade adds unlimited saved rate profiles, a printable PDF rate report and side-by-side profile comparison." }
+      }
+    ]
+  }
+  </script>
+  <script src="/config.js"></script>
+  <script src="/monetize.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="RateCalc home"><span class="logo">$</span> RateCalc</a>
+    <nav class="nav" aria-label="Main">
+      <button class="btn btn-primary btn-sm" onclick="openPro('nav')" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Freelance Hourly Rate Calculator</h1>
+    <p>Find the hourly rate you actually need to charge to hit your income goal — after taxes, business expenses, a safety buffer and all the hours you can't bill.</p>
+    <div class="badges">
+      <span class="badge">100% free</span>
+      <span class="badge">No sign-up</span>
+      <span class="badge">Runs in your browser</span>
+      <span class="badge">Live results</span>
+      <span class="badge">Shareable link</span>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">Your numbers</h2>
+
+          <div class="field">
+            <label for="income">Desired annual take-home income</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">What you want to actually keep after tax, per year.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD">USD – US Dollar</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – British Pound</option>
+              <option value="CAD">CAD – Canadian Dollar</option>
+              <option value="AUD">AUD – Australian Dollar</option>
+              <option value="INR">INR – Indian Rupee</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Annual business expenses</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Software, equipment, insurance, coworking, accountant, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Tax rate (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Effective rate incl. self-employment tax.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Profit / buffer margin (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Cushion for slow months and surprises.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Billable hours per day</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Billable hours per day (number)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Non-billable (admin, sales, learning) time: <strong id="nonBillable">37.5%</strong> of an 8-hour day.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Working days per week</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Weeks off per year</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Vacation + sick days + holidays.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copy summary</button>
+            <button class="btn" id="shareBtn" type="button">Share link</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">Your minimum hourly rate</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">per billable hour, to take home $60,000 a year</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Daily rate</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Weekly rate</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Monthly revenue target</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Annual gross revenue needed</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Billable hours / year</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Real hourly (take-home ÷ all hours)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Where each dollar goes</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Bar showing the share of gross revenue going to take-home income, taxes, expenses and buffer.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Project quote helper</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Estimated hours</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Rush multiplier</label>
+                <select id="rush">
+                  <option value="1">None (×1.0)</option>
+                  <option value="1.25">Tight deadline (×1.25)</option>
+                  <option value="1.5">Rush (×1.5)</option>
+                  <option value="2">Emergency (×2.0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Suggested fixed price</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Value-based range (×1.2–1.5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Fixed price = hourly rate × hours × rush. The value range adds a margin for expertise, risk and the outcome you deliver.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Rate profiles <span class="pro-badge" id="profilesBadge">1 FREE</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Compare profiles</button>
+        </div>
+        <p class="hint">Save different setups — "Web dev", "Design", "Consulting" — and reload them later. Free plan stores one profile; Pro is unlimited.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Profile name (e.g. Web dev)" maxlength="40" aria-label="Profile name" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Save profile</button>
+          <button class="btn" id="reportBtn" type="button">Rate report (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Compare two profiles</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Profile A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Profile B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Metric</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Difference</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Go Pro <span class="pro-badge">LIFETIME</span></h3>
+        <ul>
+          <li>Unlimited saved rate profiles</li>
+          <li>Printable rate report (PDF)</li>
+          <li>Compare profiles side-by-side</li>
+          <li>Lifetime updates, one payment</li>
+        </ul>
+        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Get paid faster, worldwide</h2>
+    <p class="hint">Tools freelancers commonly use to invoice and receive money from international clients. These are affiliate links: we may earn a commission at no extra cost to you.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<section class="content container">
+  <div class="features">
+    <div class="feature"><div class="ic">⚡</div><h3>Instant, live results</h3><p>Every number updates as you type — hourly, daily, weekly and monthly targets at a glance.</p></div>
+    <div class="feature"><div class="ic">🧮</div><h3>Real-world math</h3><p>Accounts for taxes, expenses, a safety buffer and the hours you can't bill, not just salary ÷ 2,080.</p></div>
+    <div class="feature"><div class="ic">📦</div><h3>Project quotes</h3><p>Turn your rate into a fixed price with rush multipliers and a value-based range.</p></div>
+    <div class="feature"><div class="ic">🔒</div><h3>Private by design</h3><p>Nothing is uploaded. Your inputs stay in your browser and in the share link you choose to send.</p></div>
+  </div>
+
+  <h2>How to calculate your freelance hourly rate</h2>
+  <p>Most new freelancers set their rate by looking at what others charge or by dividing an old salary by 2,080 hours. Both approaches quietly lose money. A sustainable rate works backwards from what you need to earn, and this calculator follows that logic step by step:</p>
+  <ol>
+    <li><strong>Start with your take-home goal.</strong> This is what you want to actually keep each year — the equivalent of a net salary.</li>
+    <li><strong>Gross it up for taxes.</strong> Divide the take-home goal by (1 − tax rate). At a 25% effective rate, keeping $60,000 requires $80,000 of pre-tax profit.</li>
+    <li><strong>Add business expenses.</strong> Software subscriptions, hardware, insurance, coworking, accountant fees, marketing, courses. These are paid by your business before you see a cent.</li>
+    <li><strong>Add a buffer.</strong> A 10–20% margin covers slow months, late payments and unplanned costs. Without it, one quiet quarter puts you behind for the year.</li>
+    <li><strong>Count your billable hours honestly.</strong> Billable hours per day × working days per week × (52 − weeks off). Five billable hours a day, five days a week and six weeks off is 1,150 hours — not 2,080.</li>
+    <li><strong>Divide.</strong> Gross revenue needed ÷ billable hours = your minimum hourly rate. Everything above it is profit; anything below means you are subsidising your clients.</li>
+  </ol>
+  <p>The breakdown bar shows how each dollar of revenue is split between take-home, taxes, expenses and buffer, which is a useful reality check when a rate feels "too high". Usually only 55–70% of what you invoice ends up in your pocket.</p>
+
+  <h2>Common mistakes when setting a freelance rate</h2>
+  <h3>Copying your old employee salary</h3>
+  <p>An employee's hourly equivalent hides a lot: employer-paid taxes and benefits, paid holidays, equipment, training and a steady 40 billable hours a week. As a freelancer you fund all of that yourself, so matching your old hourly figure typically means a 30–50% pay cut in real terms.</p>
+  <h3>Forgetting non-billable time</h3>
+  <p>Prospecting, proposals, calls, invoicing, bookkeeping and learning new tools easily consume 30–40% of a working week. If you price as though every hour is billable, your effective income is far lower than your rate suggests. The calculator shows your derived non-billable share so you can see this plainly.</p>
+  <h3>Ignoring taxes until the bill arrives</h3>
+  <p>Self-employed people pay both the employee and employer side of social contributions in most countries, plus income tax, often in quarterly estimates. Build your effective rate into the price from day one and set the money aside as you invoice.</p>
+  <h3>Pricing without a buffer</h3>
+  <p>Clients pay late, projects pause, laptops die. A buffer margin is not greed; it is the difference between a business and a hobby.</p>
+
+  <h2>Hourly vs project vs retainer pricing</h2>
+  <p><strong>Hourly</strong> is transparent and protects you when scope is unclear, but it caps your income at hours worked and penalises efficiency. <strong>Project (fixed) pricing</strong> is easier for clients to say yes to and lets you earn more as you get faster, provided you scope carefully and price in revision rounds. <strong>Retainers</strong> — a fixed monthly fee for ongoing availability or a block of hours — smooth your cash flow and are usually priced with a small discount in exchange for commitment. Many freelancers use all three: hourly for discovery and maintenance, fixed fees for defined deliverables, retainers for long-term clients. Whatever the model, your hourly floor from this calculator is the number no quote should fall below.</p>
+
+  <h2>How to raise rates with existing clients</h2>
+  <ul>
+    <li><strong>Give notice.</strong> 30–60 days is standard; announce the new rate for work starting after a specific date.</li>
+    <li><strong>Lead with value, not costs.</strong> Mention results delivered and expanded skills rather than your rent going up.</li>
+    <li><strong>Keep it short and confident.</strong> A two-paragraph email beats a long justification. Most clients expect periodic increases.</li>
+    <li><strong>Offer a path.</strong> A retainer or prepaid block at a slightly lower rate makes the increase easier to accept.</li>
+    <li><strong>Raise with new clients first.</strong> Test the new rate on fresh proposals, then bring existing clients up to it.</li>
+  </ul>
+
+  <h2>A note on benchmarks</h2>
+  <p>Published "average freelance rates" vary enormously by country, specialty, seniority and how the survey was run, so treat them as context, not a target. This calculator does not use benchmark data; it computes the rate <em>your</em> numbers require. If the result is far above what your market pays, the fix is usually to raise billable efficiency, lower expenses, specialise, or target clients with bigger budgets — not to accept a rate that cannot sustain you.</p>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details>
+      <summary>How does the freelance hourly rate calculator work?</summary>
+      <p>It starts from the take-home income you want, adds the taxes you will owe on it, adds your annual business expenses and a profit buffer, then divides that gross revenue by the number of hours you can realistically bill in a year (billable hours per day × working days per week × working weeks). The result is the minimum hourly rate that gets you to your goal.</p>
+    </details>
+    <details>
+      <summary>What is a good freelance hourly rate?</summary>
+      <p>There is no universal number. A good rate is one that covers your target income, taxes, expenses and unpaid time, and that your market will pay. As a rough sanity check, many freelancers land between 1.5× and 3× the hourly equivalent of a comparable salaried job, because they must cover benefits, downtime and overhead themselves. Use the calculator for your floor, then adjust upward for experience, specialisation and demand.</p>
+    </details>
+    <details>
+      <summary>Should I charge hourly or per project?</summary>
+      <p>Hourly billing is simplest for open-ended or poorly defined work. Fixed project pricing rewards you for being efficient and is easier for clients to approve, but you carry the risk of underestimating. Many freelancers compute a fixed price from estimated hours × hourly rate, then add a margin for value and risk. The project quote helper in this tool does exactly that.</p>
+    </details>
+    <details>
+      <summary>How many hours a year can a freelancer actually bill?</summary>
+      <p>Far fewer than 2,080. Between finding clients, admin, invoicing, learning and gaps between projects, most full-time freelancers bill 1,000 to 1,400 hours per year — roughly 4 to 6 billable hours per working day. The calculator defaults to 5 billable hours a day, 5 days a week and 6 weeks off, which comes to 1,150 billable hours.</p>
+    </details>
+    <details>
+      <summary>Do I need to include taxes in my hourly rate?</summary>
+      <p>Yes. As a freelancer nobody withholds tax for you, so your rate must cover income tax, self-employment or social contributions and any local business taxes. Enter your effective (blended) tax rate as a percentage and the calculator grosses up your income so that what is left after tax matches your goal.</p>
+    </details>
+    <details>
+      <summary>Is the freelance rate calculator free?</summary>
+      <p>Yes. All calculations, the project quote helper, copy summary and share link are free with no sign-up, and everything runs in your browser. An optional one-time Pro upgrade adds unlimited saved rate profiles, a printable PDF rate report and side-by-side profile comparison.</p>
+    </details>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>© <span data-year></span> RateCalc. Not financial or tax advice.</div>
+    <div><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · Made with ❤️ for freelancers</div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Freelance Rate Report</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Inputs</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Results</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Revenue breakdown</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Project quote</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Generated with RateCalc – freelance hourly rate calculator. Figures are estimates based on the inputs above and are not financial or tax advice.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <h3 id="proTitle">Upgrade to RateCalc Pro <span class="pro-badge">LIFETIME</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
+    <ul>
+      <li>Unlimited rate profiles</li>
+      <li>Printable rate report (PDF)</li>
+      <li>Compare profiles side-by-side</li>
+      <li>Lifetime updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
