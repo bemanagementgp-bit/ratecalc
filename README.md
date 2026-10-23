@@ -2,7 +2,7 @@
 
 Free, static, browser-only calculator that turns a freelancer's income goal into the hourly / daily / weekly / monthly rate they actually need to charge — after taxes, business expenses, a profit buffer and all the hours they can't bill.
 
-**Live URL:** https://__SITE_URL__/ (placeholder — replace after deploy)
+**Live URL:** https://ratecalc-tool.vercel.app/ (placeholder — replace after deploy)
 
 Primary keyword: *freelance hourly rate calculator*.
 
@@ -47,10 +47,10 @@ Then open the printed URL (usually http://localhost:3000). No build step, no dep
 
 ## Deploy
 
-Deploy the folder as-is to Vercel (`vercel.json` enables clean URLs and security headers). After the first deploy, replace the `__SITE_URL__` placeholder with the real domain:
+Deploy the folder as-is to Vercel (`vercel.json` enables clean URLs and security headers). After the first deploy, replace the `ratecalc-tool.vercel.app` placeholder with the real domain:
 
 ```bash
-grep -rl "__SITE_URL__" . | xargs sed -i 's/__SITE_URL__/ratecalc.example.com/g'
+grep -rl "ratecalc-tool.vercel.app" . | xargs sed -i 's/ratecalc-tool.vercel.app/ratecalc.example.com/g'
 ```
 
 ## Monetization setup
