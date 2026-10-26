@@ -1,0 +1,314 @@
+[
+  {
+    "slug": "freelance-web-developer-hourly-rate",
+    "keyword": "freelance web developer hourly rate",
+    "title": "Freelance Web Developer Hourly Rate Calculator (Free) | RateCalc",
+    "description": "Work out the freelance web developer hourly rate you really need from your income goal, tooling costs, taxes and non-billable hours. Free, live, in-browser.",
+    "eyebrow": "Freelance pricing · Web developers",
+    "h1": "Freelance Web Developer Hourly Rate Calculator",
+    "tagline": "Enter your income goal, expenses and real billable hours to get the hourly rate a freelance developer needs to charge, not the one a job board suggests.",
+    "intro": "<p>Most developers set their first freelance rate by dividing an old salary by 2,080 hours. That number ignores the hours you spend on proposals, calls, invoicing and learning the next framework, and it ignores that nobody pays your health insurance or your laptop anymore. The result is a rate that looks fine in January and feels like a pay cut by June.</p><p>RateCalc starts from what you want to take home and works backwards. We preloaded it with numbers typical for a mid-level freelance web developer in the US (an $85,000 target, about $5,000 a year in tooling, five billable hours a day). Change anything and the hourly, daily and project figures update instantly, in your browser.</p>",
+    "sections": [
+      {
+        "h2": "What drives a developer's hourly rate",
+        "html": "<p>Three inputs move the number more than anything else:</p><ul><li><strong>Billable hours per day.</strong> Developers who track time honestly land between four and six billable hours on a good day. Code review, Slack, estimates and context-switching eat the rest. Enter five, not eight.</li><li><strong>Expenses.</strong> Hosting for demos, a good machine every three years, paid APIs, courses, an accountant, coworking. $4,000 to $8,000 a year is normal; add health insurance if you pay it yourself.</li><li><strong>Taxes and buffer.</strong> Self-employment tax plus income tax commonly takes 25 to 35 percent in the US. The buffer covers the quiet month between contracts and the client who pays 60 days late.</li></ul><p>With the preset values the calculator lands around $110 an hour, because five billable hours and a 25 percent tax rate leave little room. Senior or specialised work (performance, security, legacy migrations) routinely commands $120 to $200.</p>"
+      },
+      {
+        "h2": "Hourly, day rate or fixed price?",
+        "html": "<p>Hourly is the easiest to start with and the easiest for clients to compare, which is exactly why it caps your income. Once you can estimate a type of project reliably (a marketing site, a Shopify theme, an API integration), switch to fixed prices built from your hourly rate: multiply estimated hours by your rate, then add 20 to 50 percent for the risk you are absorbing. The project quote box below the main result does this for you.</p><p>Retainers suit maintenance and ongoing feature work: a set number of hours per month, paid up front, at a small discount. They smooth your cash flow and reduce the non-billable sales time that forces your rate up in the first place.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is a typical freelance web developer hourly rate?",
+        "a": "In the US and Western Europe, generalist freelance developers usually charge between $60 and $120 an hour; specialists charge $120 to $200 or more. Rates vary a lot by market and experience, so calculate yours from your own costs rather than copying an average."
+      },
+      {
+        "q": "Should I charge the same rate for every client?",
+        "a": "Your floor should be the same, because your costs are. Above the floor you can price by value: a checkout fix for a store doing $2M a year is worth more than the same hours for a hobby site."
+      },
+      {
+        "q": "How do I handle a client who wants a discount?",
+        "a": "Reduce scope, not the rate. Removing a feature or a revision round keeps your hourly value intact; lowering the rate resets the anchor for every future project with that client."
+      },
+      {
+        "q": "Does the calculator store my numbers?",
+        "a": "Only in your browser's local storage so you find them again next visit. Nothing is uploaded, and the share link simply encodes your inputs in the URL."
+      }
+    ],
+    "query": "inc=85000&cur=USD&exp=5000&tax=25&mar=10&hpd=5&dpw=5&wo=5&qh=40&rush=1"
+  },
+  {
+    "slug": "graphic-designer-hourly-rate-calculator",
+    "keyword": "graphic designer hourly rate calculator",
+    "title": "Graphic Designer Hourly Rate Calculator – What to Charge | RateCalc",
+    "description": "Free graphic designer hourly rate calculator: turn your income goal, software costs, taxes and real billable hours into hourly, daily and package prices.",
+    "eyebrow": "Freelance pricing · Graphic designers",
+    "h1": "Graphic Designer Hourly Rate Calculator",
+    "tagline": "Find the hourly rate a freelance graphic designer needs to charge to cover software, taxes, unpaid admin time and still hit a real income goal.",
+    "intro": "<p>Design is one of the most underpriced freelance services because so much of the work is invisible to the client: mood boards, three directions they never see, file prep, font licensing, and the fourth round of revisions. If your rate only covers the hours in the final deliverable, the rest comes out of your evenings.</p><p>This page preloads RateCalc with figures that fit an independent graphic designer: a $65,000 take-home goal, roughly $4,500 a year in subscriptions and assets, and five billable hours a day. Adjust them to your situation and read your rate on the right.</p>",
+    "sections": [
+      {
+        "h2": "The costs designers forget to include",
+        "html": "<p>Add these to the expenses field before you trust the result:</p><ul><li><strong>Software:</strong> Creative Cloud, Figma, font services and stock subscriptions add up to $1,000 to $2,500 a year on their own.</li><li><strong>Licences you buy per project</strong> that clients rarely reimburse: typefaces, mockups, illustration packs.</li><li><strong>Hardware:</strong> a colour-accurate monitor, a tablet and a machine that renders without stalling, replaced every three to four years.</li><li><strong>Portfolio and promotion:</strong> domain, hosting, printed samples, the odd awards entry.</li></ul><p>Then be honest about billable hours. Designers who log their time usually find four to five client-billable hours in an eight-hour day; the rest is feedback loops, admin and finding the next project.</p>"
+      },
+      {
+        "h2": "From hourly rate to package prices",
+        "html": "<p>Clients buy logos and brand systems, not hours, so use the hourly figure as an internal floor and sell packages. A simple method: estimate hours for each deliverable, multiply by your rate, then add a margin for revisions you are including (typically two rounds) and the strategic value of the work. A logo that takes 20 hours at $85 is a $1,700 floor; sold as a package with research, three concepts and brand files, $2,000 to $3,500 is common.</p><p>State what is included in writing, charge for extra revision rounds at your hourly rate, and ask for 50 percent up front. Each of those three habits protects the rate you just calculated.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What do freelance graphic designers charge per hour?",
+        "a": "Broadly $35 to $75 an hour for early-career designers and $75 to $150 for experienced brand or UI designers in North America and Western Europe. Local markets differ, which is why calculating from your own costs beats copying a range."
+      },
+      {
+        "q": "Should I charge per hour or per project for logo design?",
+        "a": "Per project, priced from your hourly rate. Fixed prices reward you for being fast and keep the conversation about outcomes rather than timesheets."
+      },
+      {
+        "q": "How do I price unlimited revisions requests?",
+        "a": "Don't offer them. Include two rounds in the package and quote additional rounds at your hourly rate; the calculator's project box gives you that number."
+      },
+      {
+        "q": "Is RateCalc free for designers?",
+        "a": "Yes. The calculator, the breakdown chart and the share link are free and run in your browser. Pro adds saved profiles, side-by-side comparison and a printable rate report."
+      }
+    ],
+    "query": "inc=65000&cur=USD&exp=4500&tax=25&mar=10&hpd=5&dpw=5&wo=5&qh=20&rush=1"
+  },
+  {
+    "slug": "freelance-writer-rate-calculator",
+    "keyword": "freelance writer rate calculator",
+    "title": "Freelance Writer Rate Calculator – Hourly, Per Word & Per Article | RateCalc",
+    "description": "Free freelance writer rate calculator. Convert your income goal and real billable hours into an hourly rate, then into fair per-word and per-article prices.",
+    "eyebrow": "Freelance pricing · Writers",
+    "h1": "Freelance Writer Rate Calculator",
+    "tagline": "Calculate the hourly rate a freelance writer needs, then translate it into per-word and per-article prices that still pay for research and revisions.",
+    "intro": "<p>Writers are quoted per word, per article or per hour, often by the same client in the same week. The only way to keep those three numbers consistent is to anchor all of them to the hourly rate you need to earn. Otherwise a $0.10-per-word blog post that needs four hours of interviews quietly becomes a $25-an-hour job.</p><p>The preset below assumes a $60,000 take-home goal, modest expenses (about $2,500 for tools, subscriptions and an accountant) and four billable hours a day, because research, pitching and editing other people's briefs are rarely billable.</p>",
+    "sections": [
+      {
+        "h2": "Turning an hourly rate into per-word and per-article prices",
+        "html": "<p>Once RateCalc gives you an hourly figure, time a few typical pieces end to end: brief, research, outline, draft, one revision round. A 1,200-word article that takes six hours at $95 an hour (roughly what the preset produces) needs to earn $570, which is $0.48 per word. If a client's per-word rate implies less than that, the piece either needs less research or a different client.</p><ul><li><strong>Short, researched content</strong> (blog posts, newsletters): expect 4 to 8 hours per 1,000 words including revisions.</li><li><strong>Long-form and technical pieces</strong> with expert interviews: 10 to 20 hours per 2,000 words.</li><li><strong>Editing and rewrites:</strong> charge hourly; scope is impossible to predict from a word count.</li></ul>"
+      },
+      {
+        "h2": "Why writers underprice, and the fix",
+        "html": "<p>The most common mistake is counting only writing time. A rate that pays for the draft but not for the call, the second round of edits and the invoice chasing is a rate that shrinks every month. The second mistake is treating content-mill rates as a market benchmark; they are a floor set by volume, not by skill.</p><p>Use the calculator's buffer field for dry spells and late payers, raise your rate with every two or three new clients, and put a revision limit in your terms. Writers who move from per-word to per-project pricing for recurring clients usually raise their effective hourly rate by 30 to 50 percent without changing the quality of the work.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is a good per-word rate for freelance writers?",
+        "a": "Experienced writers producing researched content typically charge $0.20 to $0.50 per word; specialised B2B and technical writers often charge $0.50 to $1.00 or more. Derive yours from your hourly need and the hours a piece really takes."
+      },
+      {
+        "q": "Should I charge hourly or per project for writing?",
+        "a": "Per project for defined pieces, hourly for editing, consulting and open-ended work. Both should be built from the same hourly rate so you are never underpaid by the unit of measure."
+      },
+      {
+        "q": "How many billable hours a day is realistic for a writer?",
+        "a": "Three to five. Deep writing is tiring, and pitching, admin and reading briefs are unpaid. Enter the number you can sustain, not the number you hope for."
+      },
+      {
+        "q": "Does the calculator work in currencies other than dollars?",
+        "a": "Yes. Choose USD, EUR, GBP, CAD, AUD or INR and all figures are formatted in that currency."
+      }
+    ],
+    "query": "inc=60000&cur=USD&exp=2500&tax=25&mar=10&hpd=4&dpw=5&wo=5&qh=6&rush=1"
+  },
+  {
+    "slug": "consultant-hourly-rate-calculator",
+    "keyword": "consultant hourly rate calculator",
+    "title": "Consultant Hourly Rate Calculator – Set a Rate That Covers Everything | RateCalc",
+    "description": "Free consultant hourly rate calculator: enter target income, overheads, tax rate and utilisation to get the hourly and daily rate a consultant needs to charge.",
+    "eyebrow": "Freelance pricing · Consultants",
+    "h1": "Consultant Hourly Rate Calculator",
+    "tagline": "Work out the hourly and daily rate an independent consultant needs once utilisation, overheads, taxes and a profit buffer are taken into account.",
+    "intro": "<p>Consulting rates look high from the outside because they have to carry the hours nobody pays for: business development, proposals, travel, thinking time between engagements and the admin of running a company of one. Firms call this utilisation and rarely plan above 60 percent. Independents who assume 100 percent end up earning less than they did as employees.</p><p>We preset RateCalc for an independent consultant targeting $120,000 in take-home, with $12,000 of overheads (insurance, software, travel not rebilled, professional memberships), a 30 percent tax rate, a 15 percent profit buffer and four billable hours a day, which is roughly 50 percent utilisation.</p>",
+    "sections": [
+      {
+        "h2": "Utilisation is the number that matters",
+        "html": "<p>Billable hours per day in this calculator is your utilisation in disguise. Four hours a day over a 46-week year is about 920 billable hours, which is what many solo consultants actually achieve once sales, delivery gaps and holidays are counted. Drop it to three hours and the required rate rises by a third; that is not greed, it is arithmetic.</p><ul><li>Track every hour for a month, billable or not, before trusting your own estimate.</li><li>Count proposal writing and discovery calls as non-billable unless you charge for them (paid discovery is a good habit).</li><li>Plan at least six weeks off: holidays, training and the week you spend ill after a big delivery.</li></ul>"
+      },
+      {
+        "h2": "Daily rates, retainers and value pricing",
+        "html": "<p>Most consulting is sold by the day or by the engagement, not by the hour. The daily rate shown in the results multiplies your hourly rate by your billable hours per day, so a client buying a full day pays for a full day of attention, not eight hours of billing. For strategy work, price the engagement on outcomes: a four-week assessment at a fixed fee anchored to your daily rate plus a premium for the decisions it enables.</p><p>Retainers (a fixed monthly fee for availability and a set number of days) are the most reliable way to lift utilisation. Offer a modest discount in exchange for a three or six month commitment and invoice at the start of each month.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What hourly rate should an independent consultant charge?",
+        "a": "A common rule of thumb is two to three times the hourly equivalent of the salary you would earn as an employee, which usually lands between $100 and $300 an hour. This calculator replaces the rule of thumb with your real costs and utilisation."
+      },
+      {
+        "q": "How do I convert my hourly rate to a day rate?",
+        "a": "Multiply by the billable hours in your working day, not by eight. The results panel shows the daily rate directly; a 7 or 8 hour on-site day can be priced slightly below that to reward full-day bookings."
+      },
+      {
+        "q": "Should travel time be billable?",
+        "a": "Either bill it at 50 to 100 percent of your rate or build it into the day rate for on-site work. Unbilled travel is one of the fastest ways to lose a full day a week."
+      },
+      {
+        "q": "Is this calculator suitable outside the US?",
+        "a": "Yes. Change the currency and the tax rate to your country's figures; the logic (income, overheads, utilisation, buffer) is the same everywhere."
+      }
+    ],
+    "query": "inc=120000&cur=USD&exp=12000&tax=30&mar=15&hpd=4&dpw=5&wo=6&qh=80&rush=1"
+  },
+  {
+    "slug": "video-editor-freelance-rate",
+    "keyword": "video editor freelance rate",
+    "title": "Freelance Video Editor Rate Calculator – Hourly & Per Project | RateCalc",
+    "description": "Free freelance video editor rate calculator. Price edits per hour, day or finished minute from your income goal, gear and software costs, taxes and real hours.",
+    "eyebrow": "Freelance pricing · Video editors",
+    "h1": "Freelance Video Editor Rate Calculator",
+    "tagline": "Calculate the hourly rate a freelance video editor needs to cover gear, software, render time and taxes, then turn it into per-project and per-minute prices.",
+    "intro": "<p>Video editing has unusually high overheads for a desk job: a fast workstation, fast storage, plug-ins, music and stock licences, and a software stack that bills monthly whether you are cutting or not. Rates that ignore those costs feel generous per hour and leave nothing to replace a drive when it dies mid-project.</p><p>The preset uses a $70,000 take-home target, about $8,000 a year in equipment depreciation and subscriptions, a 25 percent tax rate and five billable hours a day. Render and export time counts as billable only if you are actively working on the project while it runs.</p>",
+    "sections": [
+      {
+        "h2": "Pricing by hour, by finished minute or by project",
+        "html": "<p>Editors use three units, and clients will push for whichever looks cheapest. Anchor all three to the hourly figure from the calculator:</p><ul><li><strong>Hourly</strong> for open-ended work: re-cuts, feedback-heavy corporate projects, assisting on someone else's edit.</li><li><strong>Per finished minute</strong> for predictable formats. Time a few past jobs: a talking-head YouTube video often needs 1 to 2 hours per finished minute; motion-heavy social ads can need 4 to 8. Multiply by your rate.</li><li><strong>Per project</strong> for packages (a wedding film, a course of ten lessons) with a stated number of revision rounds and extra rounds billed hourly.</li></ul><p>The project quote box applies a rush multiplier, useful when a client needs the cut by tomorrow morning.</p>"
+      },
+      {
+        "h2": "Costs and non-billable time specific to editors",
+        "html": "<p>Put a realistic depreciation figure in expenses: a $4,000 workstation and $1,500 of drives replaced every three years is already $1,800 a year before software, plug-ins and licences. Then think about non-billable time: ingesting and backing up footage, downloading client files, syncing audio and waiting for feedback are rarely itemised but always happen. Either bill them as a flat media-management fee or keep your billable hours per day honest so the rate absorbs them.</p><p>Finally, protect the rate with terms: footage delivered organised and named, a defined number of revision rounds, and a 50 percent deposit before the first cut.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What do freelance video editors charge per hour?",
+        "a": "Commonly $40 to $100 an hour, with experienced editors on commercial, broadcast or motion-graphics work charging $100 to $175. Market and niche matter more than years of experience."
+      },
+      {
+        "q": "How much should I charge per finished minute of video?",
+        "a": "Multiply the hours a minute of that format takes you by your hourly rate. For a simple talking-head edit at $95 an hour and 1.5 hours per minute, that is about $140 per finished minute."
+      },
+      {
+        "q": "Should I charge a rush fee?",
+        "a": "Yes, typically 25 to 50 percent extra for turnarounds under 48 hours. Set the rush multiplier in the quote box to see the effect on a specific job."
+      },
+      {
+        "q": "Can I save different rates for different kinds of work?",
+        "a": "With RateCalc Pro you can save named profiles (for example YouTube edits, commercial work) and compare them side by side."
+      }
+    ],
+    "query": "inc=70000&cur=USD&exp=8000&tax=25&mar=10&hpd=5&dpw=5&wo=5&qh=12&rush=1.25"
+  },
+  {
+    "slug": "virtual-assistant-hourly-rate",
+    "keyword": "virtual assistant hourly rate",
+    "title": "Virtual Assistant Hourly Rate Calculator – What Should a VA Charge? | RateCalc",
+    "description": "Free virtual assistant hourly rate calculator. Set a VA rate that covers your income goal, self-employment taxes, tools and unbillable hours, in any currency.",
+    "eyebrow": "Freelance pricing · Virtual assistants",
+    "h1": "Virtual Assistant Hourly Rate Calculator",
+    "tagline": "Find the hourly rate a virtual assistant needs to charge to reach a real income after taxes, tools and unpaid time between clients.",
+    "intro": "<p>Virtual assistants are often told what the market pays before anyone asks what they need to earn. Platform rates are set by global competition and by assistants who have not counted their own costs; copying them means working more hours for less than a local part-time job.</p><p>This preset assumes a $45,000 take-home goal, light expenses (around $1,800 a year for software, a phone plan and a decent headset), a 20 percent tax rate and six billable hours a day, which suits VAs with two or three steady clients. Lower the hours if you spend a lot of time finding work.</p>",
+    "sections": [
+      {
+        "h2": "General admin, specialised support and packages",
+        "html": "<p>Your rate should move with the skill the client is buying:</p><ul><li><strong>General admin</strong> (inbox, calendar, data entry, travel) sits at the lower end of VA rates.</li><li><strong>Specialised support</strong> such as bookkeeping, podcast production, social media management, CRM administration or customer support in a second language commands 30 to 100 percent more, because it replaces a specialist, not an assistant.</li><li><strong>Monthly packages</strong> (for example 20 hours a month, paid in advance) are how experienced VAs stabilise income. Price them at your hourly rate times the hours, with a small discount for prepayment and a clear policy for unused and extra hours.</li></ul>"
+      },
+      {
+        "h2": "Avoiding the two classic VA pricing traps",
+        "html": "<p>The first trap is unpaid availability: being on call across a client's whole working day while billing only the minutes you were busy. Either sell blocks of availability or set response-time expectations in writing. The second trap is scope creep: a calendar client who starts sending research tasks and then bookkeeping. Keep a short services list with rates per category and re-quote when the work changes.</p><p>Review your rate every six months. Each time you add a tool, a skill or a testimonial, you are a different service than the one you priced originally. Use the share link to send a client a transparent breakdown when you announce an increase.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is a good hourly rate for a virtual assistant?",
+        "a": "General VAs in the US, UK, Canada and Australia typically charge $25 to $45 an hour; specialised VAs charge $45 to $80 or more. Rates in other markets differ, so calculate from your own income goal and costs."
+      },
+      {
+        "q": "Should I charge less while I build experience?",
+        "a": "A slightly lower starting rate for your first two or three clients is reasonable, but set it from the calculator's floor, not from the cheapest platform listing, and schedule the increase in advance."
+      },
+      {
+        "q": "How do I price a retainer package?",
+        "a": "Multiply the monthly hours by your hourly rate, apply a small prepayment discount if you like, and state what happens with unused hours. The calculator's quote box gives you the base figure."
+      },
+      {
+        "q": "Is my data private?",
+        "a": "Yes. RateCalc runs entirely in your browser; your numbers are stored only on your device."
+      }
+    ],
+    "query": "inc=45000&cur=USD&exp=1800&tax=20&mar=10&hpd=6&dpw=5&wo=4&qh=20&rush=1"
+  },
+  {
+    "slug": "day-rate-calculator",
+    "keyword": "day rate calculator",
+    "title": "Freelance Day Rate Calculator – From Income Goal to Daily Rate | RateCalc",
+    "description": "Free day rate calculator for freelancers and contractors. Enter your target income, costs, taxes and working pattern to get the daily rate you should quote.",
+    "eyebrow": "Freelance pricing · Day rates",
+    "h1": "Freelance Day Rate Calculator",
+    "tagline": "Convert your income goal, expenses, taxes and real working year into a daily rate for contracting, production and consulting work.",
+    "intro": "<p>Day rates are standard in film and photo production, design studios, IT contracting and consulting. They are simpler to agree than hourly rates and discourage clients from counting minutes, but they hide a risk: a \"day\" that quietly becomes ten hours, and a working year that has fewer billable days than you planned.</p><p>The preset targets $90,000 of take-home with $6,000 of expenses, a 25 percent tax rate and seven billable hours in a working day. RateCalc shows the hourly rate first and the daily rate next to it; most people quoting day rates only ever read the second number.</p>",
+    "sections": [
+      {
+        "h2": "How many billable days are really in a year?",
+        "html": "<p>Start from 52 weeks, remove holidays, sick days and training (six weeks is a sensible minimum), then remove the days you spend finding work, doing admin and waiting between bookings. Many freelancers who think in day rates book 150 to 180 days a year, not 230. Enter the working days per week and weeks off that match your actual calendar and let the calculator do the division.</p><ul><li><strong>Production crews</strong> often work ten-hour days: set billable hours per day to 10 so the day rate reflects it, and put overtime terms in writing.</li><li><strong>IT contractors</strong> on long engagements can set hours to 7.5 or 8 and reduce weeks off, since utilisation is high.</li><li><strong>Creatives</strong> with lots of short bookings should keep weeks off generous to cover the gaps.</li></ul>"
+      },
+      {
+        "h2": "Half days, overtime and travel",
+        "html": "<p>A good day-rate sheet has four lines: full day, half day (usually 60 percent of a full day, because a half day still kills the other half), overtime per hour beyond the agreed day (your hourly rate times 1.5), and travel days (typically 50 percent). Quote all four together so there is nothing to negotiate on the day.</p><p>For multi-week bookings, a modest discount in exchange for confirmed dates and a deposit is fair; for single-day bookings and short notice, the rush multiplier in the quote box earns its keep.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How do I calculate a day rate from an annual salary?",
+        "a": "Add the costs an employer used to pay (taxes, insurance, equipment, holidays), divide by the days you can realistically bill, then add a buffer. This calculator does that step by step instead of the misleading salary ÷ 260 shortcut."
+      },
+      {
+        "q": "What is a reasonable half-day rate?",
+        "a": "About 60 percent of your full-day rate. Anything closer to 50 percent means a half-day booking costs you money, because the remaining hours are rarely sold."
+      },
+      {
+        "q": "Should overtime be included in the day rate?",
+        "a": "No. Define the day (for example 8 or 10 hours) and quote overtime per hour beyond it; the hourly figure in the results panel is your basis."
+      },
+      {
+        "q": "Can I share the calculation with a client or agent?",
+        "a": "Yes. The share link encodes your inputs in the URL, so the person opening it sees the same breakdown."
+      }
+    ],
+    "query": "inc=90000&cur=USD&exp=6000&tax=25&mar=10&hpd=7&dpw=5&wo=6&qh=8&rush=1"
+  },
+  {
+    "slug": "contractor-vs-full-time-salary-calculator",
+    "keyword": "contractor vs full-time salary calculator",
+    "title": "Contractor vs Full-Time Salary Calculator – What to Charge as a Contractor | RateCalc",
+    "description": "Compare a full-time salary with contracting: the hourly and day rate a contractor must charge to match an employee salary, benefits and paid time off. Free.",
+    "eyebrow": "Freelance pricing · Going independent",
+    "h1": "Contractor vs Full-Time Salary Calculator",
+    "tagline": "See what hourly or daily rate you need as a contractor to equal a full-time salary once benefits, taxes, equipment and unpaid time off are counted.",
+    "intro": "<p>An offer of $100,000 as an employee and $50 an hour as a contractor sound similar, and they are not. The employee gets paid holidays, sick leave, a share of payroll tax paid by the employer, health insurance, a retirement contribution and a laptop. The contractor buys all of that from the hourly rate and has gaps between contracts nobody pays for.</p><p>We preset RateCalc with a $100,000 take-home target, $15,000 of expenses to replace employer-paid benefits and equipment, a 30 percent tax rate, a 10 percent buffer, six billable hours a day and six weeks off. The result is the rate that keeps you whole; most people are surprised by how far above salary ÷ 2,080 it lands.</p>",
+    "sections": [
+      {
+        "h2": "What an employer pays that you will now pay yourself",
+        "html": "<ul><li><strong>Employer payroll taxes.</strong> In the US the employer's half of Social Security and Medicare is 7.65 percent of salary; as a contractor you pay both halves. Raise the tax rate field accordingly.</li><li><strong>Health insurance</strong> for an individual commonly costs $5,000 to $9,000 a year without a subsidy, more for a family. Put it in expenses.</li><li><strong>Retirement match</strong> of 3 to 6 percent of salary disappears unless you fund it yourself.</li><li><strong>Paid time off.</strong> Twenty days of holiday plus public holidays and sick days is five to six weeks you no longer earn during; that is the weeks-off field.</li><li><strong>Equipment, software and training</strong> that used to arrive on your desk.</li></ul><p>Add them up honestly and the break-even rate for a $100,000 salary lands well above $100 an hour with these assumptions, not the $48 that salary ÷ 2,080 suggests.</p>"
+      },
+      {
+        "h2": "When contracting still wins",
+        "html": "<p>Contracting is attractive when your billable hours stay high (long engagements, little bench time), when you can deduct genuine business expenses, and when the rate you can command is well above the break-even figure. It is a bad deal at a rate that merely matches the salary, because you have also taken on the risk of the contract ending.</p><p>Use the project quote box with 160 hours to see a monthly figure you can compare with a payslip, and remember to compare take-home with take-home: the salary number on an offer letter is before tax, and so is your rate.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How do I convert a salary to a contractor hourly rate?",
+        "a": "Add the employer-paid benefits and taxes you now cover, add equipment and a buffer for gaps, then divide by the hours you will really bill in a year. This calculator does each step; the common shortcut of salary ÷ 1,000 (so $100k → $100/hour) is a rough approximation of the same logic."
+      },
+      {
+        "q": "Is a 1099 contractor rate of 1.5× the salary hourly enough?",
+        "a": "It is often the minimum. With health insurance, both halves of payroll tax and unpaid time off, break-even frequently lands between 1.5× and 2.5× the employee hourly equivalent."
+      },
+      {
+        "q": "Does this apply outside the US?",
+        "a": "The logic does. Replace the tax rate and benefit costs with your country's figures (for example national insurance and pension contributions) and switch the currency."
+      },
+      {
+        "q": "Can I compare two scenarios side by side?",
+        "a": "Yes, with RateCalc Pro: save a profile for each option (for example \"contract at 80/h\" and \"contract at 95/h\") and open the compare table."
+      }
+    ],
+    "query": "inc=100000&cur=USD&exp=15000&tax=30&mar=10&hpd=6&dpw=5&wo=6&qh=160&rush=1"
+  }
+]

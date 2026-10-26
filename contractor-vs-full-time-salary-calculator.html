@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contractor vs Full-Time Salary Calculator – What to Charge as a Contractor | RateCalc</title>
+  <meta name="description" content="Compare a full-time salary with contracting: the hourly and day rate a contractor must charge to match an employee salary, benefits and paid time off. Free.">
+  <link rel="canonical" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contractor vs Full-Time Salary Calculator – What to Charge as a Contractor | RateCalc">
+  <meta property="og:description" content="Compare a full-time salary with contracting: the hourly and day rate a contractor must charge to match an employee salary, benefits and paid time off. Free.">
+  <meta property="og:url" content="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contractor vs Full-Time Salary Calculator – What to Charge as a Contractor | RateCalc">
+  <meta name="twitter:description" content="Compare a full-time salary with contracting: the hourly and day rate a contractor must charge to match an employee salary, benefits and paid time off. Free.">
+  <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Contractor vs Full-Time Salary Calculator – What to Charge as a Contractor | RateCalc","description":"Compare a full-time salary with contracting: the hourly and day rate a contractor must charge to match an employee salary, benefits and paid time off. Free.","url":"https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator","isPartOf":{"@type":"WebSite","name":"RateCalc","url":"https://ratecalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RateCalc","item":"https://ratecalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Contractor vs Full-Time Salary Calculator","item":"https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert a salary to a contractor hourly rate?","acceptedAnswer":{"@type":"Answer","text":"Add the employer-paid benefits and taxes you now cover, add equipment and a buffer for gaps, then divide by the hours you will really bill in a year. This calculator does each step; the common shortcut of salary ÷ 1,000 (so $100k → $100/hour) is a rough approximation of the same logic."}},{"@type":"Question","name":"Is a 1099 contractor rate of 1.5× the salary hourly enough?","acceptedAnswer":{"@type":"Answer","text":"It is often the minimum. With health insurance, both halves of payroll tax and unpaid time off, break-even frequently lands between 1.5× and 2.5× the employee hourly equivalent."}},{"@type":"Question","name":"Does this apply outside the US?","acceptedAnswer":{"@type":"Answer","text":"The logic does. Replace the tax rate and benefit costs with your country's figures (for example national insurance and pension contributions) and switch the currency."}},{"@type":"Question","name":"Can I compare two scenarios side by side?","acceptedAnswer":{"@type":"Answer","text":"Yes, with RateCalc Pro: save a profile for each option (for example \"contract at 80/h\" and \"contract at 95/h\") and open the compare table."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="RateCalc home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Freelance rate calculator</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <span class="brand-by">by <b>Be Management</b></span>
+      <button class="btn btn-primary btn-sm" onclick="openPro('nav')" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Freelance pricing · Going independent</span>
+  <h1>Contractor vs Full-Time Salary Calculator</h1>
+  <p class="tagline">See what hourly or daily rate you need as a contractor to equal a full-time salary once benefits, taxes, equipment and unpaid time off are counted.</p>
+  <div class="badges">
+  <span class="badge">100% free</span>
+  <span class="badge">No sign-up</span>
+  <span class="badge">Runs in your browser</span>
+  <span class="badge">Live results</span>
+  <span class="badge">Shareable link</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">Your numbers</h2>
+
+          <div class="field">
+            <label for="income">Desired annual take-home income</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">What you want to actually keep after tax, per year.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD">USD – US Dollar</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – British Pound</option>
+              <option value="CAD">CAD – Canadian Dollar</option>
+              <option value="AUD">AUD – Australian Dollar</option>
+              <option value="INR">INR – Indian Rupee</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Annual business expenses</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Software, equipment, insurance, coworking, accountant, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Tax rate (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Effective rate incl. self-employment tax.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Profit / buffer margin (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Cushion for slow months and surprises.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Billable hours per day</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Billable hours per day (number)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Non-billable (admin, sales, learning) time: <strong id="nonBillable">37.5%</strong> of an 8-hour day.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Working days per week</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Weeks off per year</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Vacation + sick days + holidays.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copy summary</button>
+            <button class="btn" id="shareBtn" type="button">Share link</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">Your minimum hourly rate</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">per billable hour, to take home $60,000 a year</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Daily rate</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Weekly rate</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Monthly revenue target</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Annual gross revenue needed</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Billable hours / year</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Real hourly (take-home ÷ all hours)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Where each dollar goes</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Bar showing the share of gross revenue going to take-home income, taxes, expenses and buffer.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Project quote helper</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Estimated hours</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Rush multiplier</label>
+                <select id="rush">
+                  <option value="1">None (×1.0)</option>
+                  <option value="1.25">Tight deadline (×1.25)</option>
+                  <option value="1.5">Rush (×1.5)</option>
+                  <option value="2">Emergency (×2.0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Suggested fixed price</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Value-based range (×1.2–1.5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Fixed price = hourly rate × hours × rush. The value range adds a margin for expertise, risk and the outcome you deliver.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Rate profiles <span class="pro-badge" id="profilesBadge">1 FREE</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Compare profiles</button>
+        </div>
+        <p class="hint">Save different setups — "Web dev", "Design", "Consulting" — and reload them later. Free plan stores one profile; Pro is unlimited.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Profile name (e.g. Web dev)" maxlength="40" aria-label="Profile name" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Save profile</button>
+          <button class="btn" id="reportBtn" type="button">Rate report (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Compare two profiles</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Profile A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Profile B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Metric</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Difference</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Go Pro <span class="pro-badge">LIFETIME</span></h3>
+        <ul>
+          <li>Unlimited saved rate profiles</li>
+          <li>Printable rate report (PDF)</li>
+          <li>Compare profiles side-by-side</li>
+          <li>Lifetime updates, one payment</li>
+        </ul>
+        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Price with confidence</h3>
+        <p class="hint">Rate benchmarks, proposal tips and new free tools for freelancers. No spam.</p>
+        <form class="lead-form" onsubmit="return subscribeNewsletter(event)">
+          <input type="email" name="email" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="hint tiny">No spam. Unsubscribe anytime.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Get paid faster, worldwide</h2>
+    <p class="hint">Tools freelancers commonly use to invoice and receive money from international clients. These are affiliate links: we may earn a commission at no extra cost to you.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">More ways to use RateCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/freelance-web-developer-hourly-rate">Freelance Web Developer Hourly Rate Calculator</a></li>
+      <li><a href="/graphic-designer-hourly-rate-calculator">Graphic Designer Hourly Rate Calculator</a></li>
+      <li><a href="/freelance-writer-rate-calculator">Freelance Writer Rate Calculator</a></li>
+      <li><a href="/consultant-hourly-rate-calculator">Consultant Hourly Rate Calculator</a></li>
+      <li><a href="/video-editor-freelance-rate">Freelance Video Editor Rate Calculator</a></li>
+      <li><a href="/virtual-assistant-hourly-rate">Virtual Assistant Hourly Rate Calculator</a></li>
+      <li><a href="/day-rate-calculator">Freelance Day Rate Calculator</a></li>
+      <li><a href="/contractor-vs-full-time-salary-calculator" class="current" aria-current="page">Contractor vs Full-Time Salary Calculator</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/">RateCalc</a> › Contractor vs Full-Time Salary Calculator</p>
+  <h2>Contractor vs Full-Time Salary Calculator: how it works</h2>
+  <p>An offer of $100,000 as an employee and $50 an hour as a contractor sound similar, and they are not. The employee gets paid holidays, sick leave, a share of payroll tax paid by the employer, health insurance, a retirement contribution and a laptop. The contractor buys all of that from the hourly rate and has gaps between contracts nobody pays for.</p><p>We preset RateCalc with a $100,000 take-home target, $15,000 of expenses to replace employer-paid benefits and equipment, a 30 percent tax rate, a 10 percent buffer, six billable hours a day and six weeks off. The result is the rate that keeps you whole; most people are surprised by how far above salary ÷ 2,080 it lands.</p>
+  <h2>What an employer pays that you will now pay yourself</h2>
+  <ul><li><strong>Employer payroll taxes.</strong> In the US the employer's half of Social Security and Medicare is 7.65 percent of salary; as a contractor you pay both halves. Raise the tax rate field accordingly.</li><li><strong>Health insurance</strong> for an individual commonly costs $5,000 to $9,000 a year without a subsidy, more for a family. Put it in expenses.</li><li><strong>Retirement match</strong> of 3 to 6 percent of salary disappears unless you fund it yourself.</li><li><strong>Paid time off.</strong> Twenty days of holiday plus public holidays and sick days is five to six weeks you no longer earn during; that is the weeks-off field.</li><li><strong>Equipment, software and training</strong> that used to arrive on your desk.</li></ul><p>Add them up honestly and the break-even rate for a $100,000 salary lands well above $100 an hour with these assumptions, not the $48 that salary ÷ 2,080 suggests.</p>
+  <h2>When contracting still wins</h2>
+  <p>Contracting is attractive when your billable hours stay high (long engagements, little bench time), when you can deduct genuine business expenses, and when the rate you can command is well above the break-even figure. It is a bad deal at a rate that merely matches the salary, because you have also taken on the risk of the contract ending.</p><p>Use the project quote box with 160 hours to see a monthly figure you can compare with a payslip, and remember to compare take-home with take-home: the salary number on an offer letter is before tax, and so is your rate.</p>
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary>How do I convert a salary to a contractor hourly rate?</summary><p>Add the employer-paid benefits and taxes you now cover, add equipment and a buffer for gaps, then divide by the hours you will really bill in a year. This calculator does each step; the common shortcut of salary ÷ 1,000 (so $100k → $100/hour) is a rough approximation of the same logic.</p></details>
+    <details><summary>Is a 1099 contractor rate of 1.5× the salary hourly enough?</summary><p>It is often the minimum. With health insurance, both halves of payroll tax and unpaid time off, break-even frequently lands between 1.5× and 2.5× the employee hourly equivalent.</p></details>
+    <details><summary>Does this apply outside the US?</summary><p>The logic does. Replace the tax rate and benefit costs with your country's figures (for example national insurance and pension contributions) and switch the currency.</p></details>
+    <details><summary>Can I compare two scenarios side by side?</summary><p>Yes, with RateCalc Pro: save a profile for each option (for example &quot;contract at 80/h&quot; and &quot;contract at 95/h&quot;) and open the compare table.</p></details>
+  </div>
+  <p class="back-guide">Looking for the full guide, tips and the complete FAQ? Read the <a href="/">main RateCalc page</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>A collection of free, private tools that run entirely in your browser. RateCalc is the freelance rate calculator of the family, built and maintained by Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>More free tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Invoices</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Freelance rates</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Image compressor</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Compound interest</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP subnets</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Not financial or tax advice.</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Freelance Rate Report</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Inputs</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Results</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Revenue breakdown</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Project quote</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Generated with RateCalc – freelance hourly rate calculator. Figures are estimates based on the inputs above and are not financial or tax advice.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <h3 id="proTitle">Upgrade to RateCalc Pro <span class="pro-badge">LIFETIME</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
+    <ul>
+      <li>Unlimited rate profiles</li>
+      <li>Printable rate report (PDF)</li>
+      <li>Compare profiles side-by-side</li>
+      <li>Lifetime updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+  </div>
+</div>
+<script>(function(){var q="inc=100000&cur=USD&exp=15000&tax=30&mar=10&hpd=6&dpw=5&wo=6&qh=160&rush=1";if(q&&!location.search){try{history.replaceState(null,"",location.pathname+"?"+q+location.hash);}catch(e){}}})();</script>
+<script src="/app.js"></script>
+</body>
+</html>

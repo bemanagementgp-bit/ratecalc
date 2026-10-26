@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Freelance Web Developer Hourly Rate Calculator (Free) | RateCalc</title>
+  <meta name="description" content="Work out the freelance web developer hourly rate you really need from your income goal, tooling costs, taxes and non-billable hours. Free, live, in-browser.">
+  <link rel="canonical" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Freelance Web Developer Hourly Rate Calculator (Free) | RateCalc">
+  <meta property="og:description" content="Work out the freelance web developer hourly rate you really need from your income goal, tooling costs, taxes and non-billable hours. Free, live, in-browser.">
+  <meta property="og:url" content="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Freelance Web Developer Hourly Rate Calculator (Free) | RateCalc">
+  <meta name="twitter:description" content="Work out the freelance web developer hourly rate you really need from your income goal, tooling costs, taxes and non-billable hours. Free, live, in-browser.">
+  <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Freelance Web Developer Hourly Rate Calculator (Free) | RateCalc","description":"Work out the freelance web developer hourly rate you really need from your income goal, tooling costs, taxes and non-billable hours. Free, live, in-browser.","url":"https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate","isPartOf":{"@type":"WebSite","name":"RateCalc","url":"https://ratecalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RateCalc","item":"https://ratecalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Freelance Web Developer Hourly Rate Calculator","item":"https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a typical freelance web developer hourly rate?","acceptedAnswer":{"@type":"Answer","text":"In the US and Western Europe, generalist freelance developers usually charge between $60 and $120 an hour; specialists charge $120 to $200 or more. Rates vary a lot by market and experience, so calculate yours from your own costs rather than copying an average."}},{"@type":"Question","name":"Should I charge the same rate for every client?","acceptedAnswer":{"@type":"Answer","text":"Your floor should be the same, because your costs are. Above the floor you can price by value: a checkout fix for a store doing $2M a year is worth more than the same hours for a hobby site."}},{"@type":"Question","name":"How do I handle a client who wants a discount?","acceptedAnswer":{"@type":"Answer","text":"Reduce scope, not the rate. Removing a feature or a revision round keeps your hourly value intact; lowering the rate resets the anchor for every future project with that client."}},{"@type":"Question","name":"Does the calculator store my numbers?","acceptedAnswer":{"@type":"Answer","text":"Only in your browser's local storage so you find them again next visit. Nothing is uploaded, and the share link simply encodes your inputs in the URL."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="RateCalc home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Freelance rate calculator</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <span class="brand-by">by <b>Be Management</b></span>
+      <button class="btn btn-primary btn-sm" onclick="openPro('nav')" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Freelance pricing · Web developers</span>
+  <h1>Freelance Web Developer Hourly Rate Calculator</h1>
+  <p class="tagline">Enter your income goal, expenses and real billable hours to get the hourly rate a freelance developer needs to charge, not the one a job board suggests.</p>
+  <div class="badges">
+  <span class="badge">100% free</span>
+  <span class="badge">No sign-up</span>
+  <span class="badge">Runs in your browser</span>
+  <span class="badge">Live results</span>
+  <span class="badge">Shareable link</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">Your numbers</h2>
+
+          <div class="field">
+            <label for="income">Desired annual take-home income</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">What you want to actually keep after tax, per year.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD">USD – US Dollar</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – British Pound</option>
+              <option value="CAD">CAD – Canadian Dollar</option>
+              <option value="AUD">AUD – Australian Dollar</option>
+              <option value="INR">INR – Indian Rupee</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Annual business expenses</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Software, equipment, insurance, coworking, accountant, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Tax rate (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Effective rate incl. self-employment tax.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Profit / buffer margin (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Cushion for slow months and surprises.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Billable hours per day</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Billable hours per day (number)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Non-billable (admin, sales, learning) time: <strong id="nonBillable">37.5%</strong> of an 8-hour day.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Working days per week</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Weeks off per year</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Vacation + sick days + holidays.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copy summary</button>
+            <button class="btn" id="shareBtn" type="button">Share link</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">Your minimum hourly rate</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">per billable hour, to take home $60,000 a year</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Daily rate</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Weekly rate</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Monthly revenue target</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Annual gross revenue needed</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Billable hours / year</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Real hourly (take-home ÷ all hours)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Where each dollar goes</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Bar showing the share of gross revenue going to take-home income, taxes, expenses and buffer.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Project quote helper</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Estimated hours</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Rush multiplier</label>
+                <select id="rush">
+                  <option value="1">None (×1.0)</option>
+                  <option value="1.25">Tight deadline (×1.25)</option>
+                  <option value="1.5">Rush (×1.5)</option>
+                  <option value="2">Emergency (×2.0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Suggested fixed price</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Value-based range (×1.2–1.5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Fixed price = hourly rate × hours × rush. The value range adds a margin for expertise, risk and the outcome you deliver.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Rate profiles <span class="pro-badge" id="profilesBadge">1 FREE</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Compare profiles</button>
+        </div>
+        <p class="hint">Save different setups — "Web dev", "Design", "Consulting" — and reload them later. Free plan stores one profile; Pro is unlimited.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Profile name (e.g. Web dev)" maxlength="40" aria-label="Profile name" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Save profile</button>
+          <button class="btn" id="reportBtn" type="button">Rate report (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Compare two profiles</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Profile A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Profile B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Metric</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Difference</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Go Pro <span class="pro-badge">LIFETIME</span></h3>
+        <ul>
+          <li>Unlimited saved rate profiles</li>
+          <li>Printable rate report (PDF)</li>
+          <li>Compare profiles side-by-side</li>
+          <li>Lifetime updates, one payment</li>
+        </ul>
+        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Price with confidence</h3>
+        <p class="hint">Rate benchmarks, proposal tips and new free tools for freelancers. No spam.</p>
+        <form class="lead-form" onsubmit="return subscribeNewsletter(event)">
+          <input type="email" name="email" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="hint tiny">No spam. Unsubscribe anytime.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Get paid faster, worldwide</h2>
+    <p class="hint">Tools freelancers commonly use to invoice and receive money from international clients. These are affiliate links: we may earn a commission at no extra cost to you.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">More ways to use RateCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/freelance-web-developer-hourly-rate" class="current" aria-current="page">Freelance Web Developer Hourly Rate Calculator</a></li>
+      <li><a href="/graphic-designer-hourly-rate-calculator">Graphic Designer Hourly Rate Calculator</a></li>
+      <li><a href="/freelance-writer-rate-calculator">Freelance Writer Rate Calculator</a></li>
+      <li><a href="/consultant-hourly-rate-calculator">Consultant Hourly Rate Calculator</a></li>
+      <li><a href="/video-editor-freelance-rate">Freelance Video Editor Rate Calculator</a></li>
+      <li><a href="/virtual-assistant-hourly-rate">Virtual Assistant Hourly Rate Calculator</a></li>
+      <li><a href="/day-rate-calculator">Freelance Day Rate Calculator</a></li>
+      <li><a href="/contractor-vs-full-time-salary-calculator">Contractor vs Full-Time Salary Calculator</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/">RateCalc</a> › Freelance Web Developer Hourly Rate Calculator</p>
+  <h2>Freelance Web Developer Hourly Rate Calculator: how it works</h2>
+  <p>Most developers set their first freelance rate by dividing an old salary by 2,080 hours. That number ignores the hours you spend on proposals, calls, invoicing and learning the next framework, and it ignores that nobody pays your health insurance or your laptop anymore. The result is a rate that looks fine in January and feels like a pay cut by June.</p><p>RateCalc starts from what you want to take home and works backwards. We preloaded it with numbers typical for a mid-level freelance web developer in the US (an $85,000 target, about $5,000 a year in tooling, five billable hours a day). Change anything and the hourly, daily and project figures update instantly, in your browser.</p>
+  <h2>What drives a developer's hourly rate</h2>
+  <p>Three inputs move the number more than anything else:</p><ul><li><strong>Billable hours per day.</strong> Developers who track time honestly land between four and six billable hours on a good day. Code review, Slack, estimates and context-switching eat the rest. Enter five, not eight.</li><li><strong>Expenses.</strong> Hosting for demos, a good machine every three years, paid APIs, courses, an accountant, coworking. $4,000 to $8,000 a year is normal; add health insurance if you pay it yourself.</li><li><strong>Taxes and buffer.</strong> Self-employment tax plus income tax commonly takes 25 to 35 percent in the US. The buffer covers the quiet month between contracts and the client who pays 60 days late.</li></ul><p>With the preset values the calculator lands around $110 an hour, because five billable hours and a 25 percent tax rate leave little room. Senior or specialised work (performance, security, legacy migrations) routinely commands $120 to $200.</p>
+  <h2>Hourly, day rate or fixed price?</h2>
+  <p>Hourly is the easiest to start with and the easiest for clients to compare, which is exactly why it caps your income. Once you can estimate a type of project reliably (a marketing site, a Shopify theme, an API integration), switch to fixed prices built from your hourly rate: multiply estimated hours by your rate, then add 20 to 50 percent for the risk you are absorbing. The project quote box below the main result does this for you.</p><p>Retainers suit maintenance and ongoing feature work: a set number of hours per month, paid up front, at a small discount. They smooth your cash flow and reduce the non-billable sales time that forces your rate up in the first place.</p>
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary>What is a typical freelance web developer hourly rate?</summary><p>In the US and Western Europe, generalist freelance developers usually charge between $60 and $120 an hour; specialists charge $120 to $200 or more. Rates vary a lot by market and experience, so calculate yours from your own costs rather than copying an average.</p></details>
+    <details><summary>Should I charge the same rate for every client?</summary><p>Your floor should be the same, because your costs are. Above the floor you can price by value: a checkout fix for a store doing $2M a year is worth more than the same hours for a hobby site.</p></details>
+    <details><summary>How do I handle a client who wants a discount?</summary><p>Reduce scope, not the rate. Removing a feature or a revision round keeps your hourly value intact; lowering the rate resets the anchor for every future project with that client.</p></details>
+    <details><summary>Does the calculator store my numbers?</summary><p>Only in your browser's local storage so you find them again next visit. Nothing is uploaded, and the share link simply encodes your inputs in the URL.</p></details>
+  </div>
+  <p class="back-guide">Looking for the full guide, tips and the complete FAQ? Read the <a href="/">main RateCalc page</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>A collection of free, private tools that run entirely in your browser. RateCalc is the freelance rate calculator of the family, built and maintained by Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>More free tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Invoices</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Freelance rates</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Image compressor</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Compound interest</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP subnets</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Not financial or tax advice.</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Freelance Rate Report</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Inputs</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Results</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Revenue breakdown</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Project quote</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Generated with RateCalc – freelance hourly rate calculator. Figures are estimates based on the inputs above and are not financial or tax advice.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <h3 id="proTitle">Upgrade to RateCalc Pro <span class="pro-badge">LIFETIME</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
+    <ul>
+      <li>Unlimited rate profiles</li>
+      <li>Printable rate report (PDF)</li>
+      <li>Compare profiles side-by-side</li>
+      <li>Lifetime updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+  </div>
+</div>
+<script>(function(){var q="inc=85000&cur=USD&exp=5000&tax=25&mar=10&hpd=5&dpw=5&wo=5&qh=40&rush=1";if(q&&!location.search){try{history.replaceState(null,"",location.pathname+"?"+q+location.hash);}catch(e){}}})();</script>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Assistant Hourly Rate Calculator – What Should a VA Charge? | RateCalc</title>
+  <meta name="description" content="Free virtual assistant hourly rate calculator. Set a VA rate that covers your income goal, self-employment taxes, tools and unbillable hours, in any currency.">
+  <link rel="canonical" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Virtual Assistant Hourly Rate Calculator – What Should a VA Charge? | RateCalc">
+  <meta property="og:description" content="Free virtual assistant hourly rate calculator. Set a VA rate that covers your income goal, self-employment taxes, tools and unbillable hours, in any currency.">
+  <meta property="og:url" content="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Virtual Assistant Hourly Rate Calculator – What Should a VA Charge? | RateCalc">
+  <meta name="twitter:description" content="Free virtual assistant hourly rate calculator. Set a VA rate that covers your income goal, self-employment taxes, tools and unbillable hours, in any currency.">
+  <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Virtual Assistant Hourly Rate Calculator – What Should a VA Charge? | RateCalc","description":"Free virtual assistant hourly rate calculator. Set a VA rate that covers your income goal, self-employment taxes, tools and unbillable hours, in any currency.","url":"https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate","isPartOf":{"@type":"WebSite","name":"RateCalc","url":"https://ratecalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RateCalc","item":"https://ratecalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Virtual Assistant Hourly Rate Calculator","item":"https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a good hourly rate for a virtual assistant?","acceptedAnswer":{"@type":"Answer","text":"General VAs in the US, UK, Canada and Australia typically charge $25 to $45 an hour; specialised VAs charge $45 to $80 or more. Rates in other markets differ, so calculate from your own income goal and costs."}},{"@type":"Question","name":"Should I charge less while I build experience?","acceptedAnswer":{"@type":"Answer","text":"A slightly lower starting rate for your first two or three clients is reasonable, but set it from the calculator's floor, not from the cheapest platform listing, and schedule the increase in advance."}},{"@type":"Question","name":"How do I price a retainer package?","acceptedAnswer":{"@type":"Answer","text":"Multiply the monthly hours by your hourly rate, apply a small prepayment discount if you like, and state what happens with unused hours. The calculator's quote box gives you the base figure."}},{"@type":"Question","name":"Is my data private?","acceptedAnswer":{"@type":"Answer","text":"Yes. RateCalc runs entirely in your browser; your numbers are stored only on your device."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="RateCalc home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Freelance rate calculator</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <span class="brand-by">by <b>Be Management</b></span>
+      <button class="btn btn-primary btn-sm" onclick="openPro('nav')" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Freelance pricing · Virtual assistants</span>
+  <h1>Virtual Assistant Hourly Rate Calculator</h1>
+  <p class="tagline">Find the hourly rate a virtual assistant needs to charge to reach a real income after taxes, tools and unpaid time between clients.</p>
+  <div class="badges">
+  <span class="badge">100% free</span>
+  <span class="badge">No sign-up</span>
+  <span class="badge">Runs in your browser</span>
+  <span class="badge">Live results</span>
+  <span class="badge">Shareable link</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">Your numbers</h2>
+
+          <div class="field">
+            <label for="income">Desired annual take-home income</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">What you want to actually keep after tax, per year.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD">USD – US Dollar</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – British Pound</option>
+              <option value="CAD">CAD – Canadian Dollar</option>
+              <option value="AUD">AUD – Australian Dollar</option>
+              <option value="INR">INR – Indian Rupee</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Annual business expenses</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Software, equipment, insurance, coworking, accountant, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Tax rate (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Effective rate incl. self-employment tax.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Profit / buffer margin (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Cushion for slow months and surprises.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Billable hours per day</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Billable hours per day (number)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Non-billable (admin, sales, learning) time: <strong id="nonBillable">37.5%</strong> of an 8-hour day.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Working days per week</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Weeks off per year</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Vacation + sick days + holidays.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copy summary</button>
+            <button class="btn" id="shareBtn" type="button">Share link</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">Your minimum hourly rate</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">per billable hour, to take home $60,000 a year</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Daily rate</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Weekly rate</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Monthly revenue target</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Annual gross revenue needed</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Billable hours / year</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Real hourly (take-home ÷ all hours)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Where each dollar goes</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Bar showing the share of gross revenue going to take-home income, taxes, expenses and buffer.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Project quote helper</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Estimated hours</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Rush multiplier</label>
+                <select id="rush">
+                  <option value="1">None (×1.0)</option>
+                  <option value="1.25">Tight deadline (×1.25)</option>
+                  <option value="1.5">Rush (×1.5)</option>
+                  <option value="2">Emergency (×2.0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Suggested fixed price</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Value-based range (×1.2–1.5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Fixed price = hourly rate × hours × rush. The value range adds a margin for expertise, risk and the outcome you deliver.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Rate profiles <span class="pro-badge" id="profilesBadge">1 FREE</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Compare profiles</button>
+        </div>
+        <p class="hint">Save different setups — "Web dev", "Design", "Consulting" — and reload them later. Free plan stores one profile; Pro is unlimited.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Profile name (e.g. Web dev)" maxlength="40" aria-label="Profile name" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Save profile</button>
+          <button class="btn" id="reportBtn" type="button">Rate report (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Compare two profiles</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Profile A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Profile B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Metric</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Difference</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Go Pro <span class="pro-badge">LIFETIME</span></h3>
+        <ul>
+          <li>Unlimited saved rate profiles</li>
+          <li>Printable rate report (PDF)</li>
+          <li>Compare profiles side-by-side</li>
+          <li>Lifetime updates, one payment</li>
+        </ul>
+        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Price with confidence</h3>
+        <p class="hint">Rate benchmarks, proposal tips and new free tools for freelancers. No spam.</p>
+        <form class="lead-form" onsubmit="return subscribeNewsletter(event)">
+          <input type="email" name="email" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="hint tiny">No spam. Unsubscribe anytime.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Get paid faster, worldwide</h2>
+    <p class="hint">Tools freelancers commonly use to invoice and receive money from international clients. These are affiliate links: we may earn a commission at no extra cost to you.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">More ways to use RateCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/freelance-web-developer-hourly-rate">Freelance Web Developer Hourly Rate Calculator</a></li>
+      <li><a href="/graphic-designer-hourly-rate-calculator">Graphic Designer Hourly Rate Calculator</a></li>
+      <li><a href="/freelance-writer-rate-calculator">Freelance Writer Rate Calculator</a></li>
+      <li><a href="/consultant-hourly-rate-calculator">Consultant Hourly Rate Calculator</a></li>
+      <li><a href="/video-editor-freelance-rate">Freelance Video Editor Rate Calculator</a></li>
+      <li><a href="/virtual-assistant-hourly-rate" class="current" aria-current="page">Virtual Assistant Hourly Rate Calculator</a></li>
+      <li><a href="/day-rate-calculator">Freelance Day Rate Calculator</a></li>
+      <li><a href="/contractor-vs-full-time-salary-calculator">Contractor vs Full-Time Salary Calculator</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/">RateCalc</a> › Virtual Assistant Hourly Rate Calculator</p>
+  <h2>Virtual Assistant Hourly Rate Calculator: how it works</h2>
+  <p>Virtual assistants are often told what the market pays before anyone asks what they need to earn. Platform rates are set by global competition and by assistants who have not counted their own costs; copying them means working more hours for less than a local part-time job.</p><p>This preset assumes a $45,000 take-home goal, light expenses (around $1,800 a year for software, a phone plan and a decent headset), a 20 percent tax rate and six billable hours a day, which suits VAs with two or three steady clients. Lower the hours if you spend a lot of time finding work.</p>
+  <h2>General admin, specialised support and packages</h2>
+  <p>Your rate should move with the skill the client is buying:</p><ul><li><strong>General admin</strong> (inbox, calendar, data entry, travel) sits at the lower end of VA rates.</li><li><strong>Specialised support</strong> such as bookkeeping, podcast production, social media management, CRM administration or customer support in a second language commands 30 to 100 percent more, because it replaces a specialist, not an assistant.</li><li><strong>Monthly packages</strong> (for example 20 hours a month, paid in advance) are how experienced VAs stabilise income. Price them at your hourly rate times the hours, with a small discount for prepayment and a clear policy for unused and extra hours.</li></ul>
+  <h2>Avoiding the two classic VA pricing traps</h2>
+  <p>The first trap is unpaid availability: being on call across a client's whole working day while billing only the minutes you were busy. Either sell blocks of availability or set response-time expectations in writing. The second trap is scope creep: a calendar client who starts sending research tasks and then bookkeeping. Keep a short services list with rates per category and re-quote when the work changes.</p><p>Review your rate every six months. Each time you add a tool, a skill or a testimonial, you are a different service than the one you priced originally. Use the share link to send a client a transparent breakdown when you announce an increase.</p>
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary>What is a good hourly rate for a virtual assistant?</summary><p>General VAs in the US, UK, Canada and Australia typically charge $25 to $45 an hour; specialised VAs charge $45 to $80 or more. Rates in other markets differ, so calculate from your own income goal and costs.</p></details>
+    <details><summary>Should I charge less while I build experience?</summary><p>A slightly lower starting rate for your first two or three clients is reasonable, but set it from the calculator's floor, not from the cheapest platform listing, and schedule the increase in advance.</p></details>
+    <details><summary>How do I price a retainer package?</summary><p>Multiply the monthly hours by your hourly rate, apply a small prepayment discount if you like, and state what happens with unused hours. The calculator's quote box gives you the base figure.</p></details>
+    <details><summary>Is my data private?</summary><p>Yes. RateCalc runs entirely in your browser; your numbers are stored only on your device.</p></details>
+  </div>
+  <p class="back-guide">Looking for the full guide, tips and the complete FAQ? Read the <a href="/">main RateCalc page</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>A collection of free, private tools that run entirely in your browser. RateCalc is the freelance rate calculator of the family, built and maintained by Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>More free tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Invoices</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Freelance rates</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Image compressor</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Compound interest</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP subnets</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Not financial or tax advice.</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Freelance Rate Report</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Inputs</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Results</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Revenue breakdown</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Project quote</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Generated with RateCalc – freelance hourly rate calculator. Figures are estimates based on the inputs above and are not financial or tax advice.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <h3 id="proTitle">Upgrade to RateCalc Pro <span class="pro-badge">LIFETIME</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
+    <ul>
+      <li>Unlimited rate profiles</li>
+      <li>Printable rate report (PDF)</li>
+      <li>Compare profiles side-by-side</li>
+      <li>Lifetime updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+  </div>
+</div>
+<script>(function(){var q="inc=45000&cur=USD&exp=1800&tax=20&mar=10&hpd=6&dpw=5&wo=4&qh=20&rush=1";if(q&&!location.search){try{history.replaceState(null,"",location.pathname+"?"+q+location.hash);}catch(e){}}})();</script>
+<script src="/app.js"></script>
+</body>
+</html>
