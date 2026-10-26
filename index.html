@@ -18,6 +18,9 @@
   <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
   <meta name="theme-color" content="#0b0f17">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">
   {
@@ -84,25 +87,28 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="/" aria-label="RateCalc home"><span class="logo">$</span> RateCalc</a>
+    <a class="brand" href="/" aria-label="RateCalc home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Freelance rate calculator</span></span>
+    </a>
     <nav class="nav" aria-label="Main">
+      <span class="brand-by">by <b>Be Management</b></span>
       <button class="btn btn-primary btn-sm" onclick="openPro('nav')" id="navProBtn">Pro</button>
       <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <h1>Freelance Hourly Rate Calculator</h1>
-    <p>Find the hourly rate you actually need to charge to hit your income goal — after taxes, business expenses, a safety buffer and all the hours you can't bill.</p>
-    <div class="badges">
-      <span class="badge">100% free</span>
-      <span class="badge">No sign-up</span>
-      <span class="badge">Runs in your browser</span>
-      <span class="badge">Live results</span>
-      <span class="badge">Shareable link</span>
-    </div>
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Freelance pricing</span>
+  <h1>Freelance Hourly Rate Calculator</h1>
+  <p class="tagline">Enter your income goal, expenses and billable hours and get the hourly, daily and project rate you actually need to charge.</p>
+  <div class="badges">
+  <span class="badge">100% free</span>
+  <span class="badge">No sign-up</span>
+  <span class="badge">Runs in your browser</span>
+  <span class="badge">Live results</span>
+  <span class="badge">Shareable link</span>
   </div>
 </section>
 
@@ -373,9 +379,29 @@
 </section>
 
 <footer class="site-footer">
-  <div class="container">
-    <div>© <span data-year></span> RateCalc. Not financial or tax advice.</div>
-    <div><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · Made with ❤️ for freelancers</div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>A collection of free, private tools that run entirely in your browser. RateCalc is the freelance rate calculator of the family, built and maintained by Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>More free tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Invoices</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Freelance rates</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Image compressor</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Compound interest</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP subnets</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Not financial or tax advice.</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
   </div>
 </footer>
 
