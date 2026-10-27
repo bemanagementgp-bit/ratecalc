@@ -255,6 +255,7 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 
 
 
+
 /* ===== RateCalc – app-specific styles ===== */
 .tool-main{display:flex;flex-direction:column;gap:24px;min-width:0}
 .calc-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
