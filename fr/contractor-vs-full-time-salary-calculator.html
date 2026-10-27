@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculateur prestataire vs salaire à temps plein – Combien facturer en tant que prestataire | RateCalc</title>
+  <meta name="description" content="Comparez un salaire à temps plein et le statut de prestataire : le taux horaire et journalier qu'un prestataire doit facturer pour égaler un salaire, les avantages et les congés payés d'un salarié. Gratuit.">
+  <link rel="canonical" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculateur prestataire vs salaire à temps plein – Combien facturer en tant que prestataire | RateCalc">
+  <meta property="og:description" content="Comparez un salaire à temps plein et le statut de prestataire : le taux horaire et journalier qu'un prestataire doit facturer pour égaler un salaire, les avantages et les congés payés d'un salarié. Gratuit.">
+  <meta property="og:url" content="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calculateur prestataire vs salaire à temps plein – Combien facturer en tant que prestataire | RateCalc">
+  <meta name="twitter:description" content="Comparez un salaire à temps plein et le statut de prestataire : le taux horaire et journalier qu'un prestataire doit facturer pour égaler un salaire, les avantages et les congés payés d'un salarié. Gratuit.">
+  <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RateCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Calculateur prestataire vs salaire à temps plein – Combien facturer en tant que prestataire | RateCalc","description":"Comparez un salaire à temps plein et le statut de prestataire : le taux horaire et journalier qu'un prestataire doit facturer pour égaler un salaire, les avantages et les congés payés d'un salarié. Gratuit.","url":"https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator","isPartOf":{"@type":"WebSite","name":"RateCalc","url":"https://ratecalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RateCalc","item":"https://ratecalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Calculateur prestataire vs salaire à temps plein","item":"https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Comment convertir un salaire en taux horaire de prestataire ?","acceptedAnswer":{"@type":"Answer","text":"Ajoutez les avantages et charges payés par l'employeur que vous assumez désormais, ajoutez l'équipement et une marge pour les périodes creuses, puis divisez par les heures que vous facturerez réellement dans l'année. Ce calculateur fait chaque étape ; le raccourci courant salaire ÷ 1 000 (donc 100 000 $ → 100 $/heure) est une approximation grossière de la même logique."}},{"@type":"Question","name":"Un tarif de prestataire 1099 égal à 1,5× le salaire horaire suffit-il ?","acceptedAnswer":{"@type":"Answer","text":"C'est souvent le minimum. Avec l'assurance santé, les deux parts des charges sociales et les congés non payés, le seuil d'équilibre se situe souvent entre 1,5× et 2,5× l'équivalent horaire d'un salarié."}},{"@type":"Question","name":"Cela s'applique-t-il hors des États-Unis ?","acceptedAnswer":{"@type":"Answer","text":"La logique, oui. Remplacez le taux d'imposition et le coût des avantages par les chiffres de votre pays (par exemple cotisations sociales et retraite) et changez la devise."}},{"@type":"Question","name":"Puis-je comparer deux scénarios côte à côte ?","acceptedAnswer":{"@type":"Answer","text":"Oui, avec RateCalc Pro : enregistrez un profil pour chaque option (par exemple « contrat à 80/h » et « contrat à 95/h ») et ouvrez le tableau de comparaison."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="fr_FR">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/fr/" aria-label="Accueil RateCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Calculateur de tarif freelance</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Plus d'outils"><span class="mt-label">Plus d'outils</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Factures</small></a>
+          <a href="https://ratecalc-tool.vercel.app" class="current"><span class="mi">R</span>RateCalc<small>Tarifs freelance</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>Codes QR</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compresseur d'images</small></a>
+          <a href="https://growthcalc-tool.vercel.app"><span class="mi">G</span>GrowthCalc<small>Intérêts composés</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Sous-réseaux IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockups de captures d'écran</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockups de chats et de posts</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slides de carrousel</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formats pour réseaux sociaux</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Cadres photo et mockups</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Concours Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Recherche d'adresse IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Redimensionnement d'images et de vidéos</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">par <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Installer cet outil comme une app">⤓ Installer</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Changer de thème">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Tarifs freelance · Passer à l'indépendance</span>
+  <h1>Calculateur prestataire vs salaire à temps plein</h1>
+  <p class="tagline">Découvrez le taux horaire ou journalier dont vous avez besoin en tant que prestataire pour égaler un salaire à temps plein, une fois comptés les avantages, les impôts, l'équipement et les congés non payés.</p>
+  <div class="badges">
+  <span class="badge">100 % gratuit</span>
+  <span class="badge">Sans inscription</span>
+  <span class="badge">Fonctionne dans votre navigateur</span>
+  <span class="badge">Résultats en direct</span>
+  <span class="badge">Lien partageable</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">Vos chiffres</h2>
+
+          <div class="field">
+            <label for="income">Revenu net annuel souhaité</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">Ce que vous voulez réellement garder après impôts, par an.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Devise</label>
+            <select id="currency">
+              <option value="USD">USD – Dollar américain</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – Livre sterling</option>
+              <option value="CAD">CAD – Dollar canadien</option>
+              <option value="AUD">AUD – Dollar australien</option>
+              <option value="INR">INR – Roupie indienne</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Frais professionnels annuels</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Logiciels, équipement, assurance, coworking, comptable, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Taux d'imposition (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Taux effectif, cotisations d'indépendant comprises.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Marge bénéficiaire / de sécurité (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Coussin pour les mois creux et les imprévus.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Heures facturables par jour</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Heures facturables par jour (nombre)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Temps non facturable (administratif, prospection, formation) : <strong id="nonBillable">37,5 %</strong> d'une journée de 8 heures.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Jours travaillés par semaine</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Semaines de repos par an</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Vacances + jours de maladie + jours fériés.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copier le résumé</button>
+            <button class="btn" id="shareBtn" type="button">Lien de partage</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Réinitialiser</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">Votre taux horaire minimum</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">par heure facturable, pour gagner 60 000 $ net par an</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Tarif journalier</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Tarif hebdomadaire</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Objectif de chiffre d'affaires mensuel</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Chiffre d'affaires brut annuel nécessaire</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Heures facturables / an</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Taux horaire réel (net ÷ toutes les heures)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Où va chaque dollar</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Barre montrant la part du chiffre d'affaires brut consacrée au revenu net, aux impôts, aux dépenses et à la marge.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Assistant de devis de projet</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Heures estimées</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Multiplicateur d'urgence</label>
+                <select id="rush">
+                  <option value="1">Aucune (×1,0)</option>
+                  <option value="1.25">Délai serré (×1,25)</option>
+                  <option value="1.5">Urgent (×1,5)</option>
+                  <option value="2">Urgence (×2,0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Prix forfaitaire suggéré</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Fourchette basée sur la valeur (×1,2–1,5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Prix forfaitaire = taux horaire × heures × urgence. La fourchette de valeur ajoute une marge pour l'expertise, le risque et le résultat que vous apportez.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Profils de tarif <span class="pro-badge" id="profilesBadge">1 GRATUIT</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Comparer des profils</button>
+        </div>
+        <p class="hint">Enregistrez différentes configurations — « Dév web », « Design », « Conseil » — et rechargez-les plus tard. Le plan gratuit stocke un profil ; Pro est illimité.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Nom du profil (ex. Dév web)" maxlength="40" aria-label="Nom du profil" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Enregistrer le profil</button>
+          <button class="btn" id="reportBtn" type="button">Rapport de tarif (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Comparer deux profils</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Profil A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Profil B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Indicateur</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Différence</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Passer à Pro <span class="pro-badge">À VIE</span></h3>
+        <ul>
+          <li>Profils de tarif enregistrés illimités</li>
+          <li>Rapport de tarif imprimable (PDF)</li>
+          <li>Comparer des profils côte à côte</li>
+          <li>Mises à jour à vie, un seul paiement</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Passer à Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Fixez vos prix en toute confiance</h3>
+        <p class="hint">Références de tarifs, conseils pour vos propositions et nouveaux outils gratuits pour freelances. Pas de spam.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="vous@email.com" aria-label="Adresse e-mail" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">S'abonner</button>
+        </form>
+        <p class="hint tiny">Pas de spam. Désabonnement à tout moment.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Soyez payé plus vite, partout dans le monde</h2>
+    <p class="hint">Des outils couramment utilisés par les freelances pour facturer et recevoir des paiements de clients internationaux. Ce sont des liens d'affiliation : nous pouvons percevoir une commission sans coût supplémentaire pour vous.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Plus de façons d'utiliser RateCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/fr/freelance-web-developer-hourly-rate">Calculateur de taux horaire pour développeur web freelance</a></li>
+      <li><a href="/fr/graphic-designer-hourly-rate-calculator">Calculateur de taux horaire pour graphiste</a></li>
+      <li><a href="/fr/freelance-writer-rate-calculator">Calculateur de tarifs pour rédacteur freelance</a></li>
+      <li><a href="/fr/consultant-hourly-rate-calculator">Calculateur de taux horaire pour consultants</a></li>
+      <li><a href="/fr/video-editor-freelance-rate">Calculateur de tarifs pour monteur vidéo freelance</a></li>
+      <li><a href="/fr/virtual-assistant-hourly-rate">Calculateur de taux horaire pour assistant virtuel</a></li>
+      <li><a href="/fr/day-rate-calculator">Calculateur de tarif journalier freelance</a></li>
+      <li><a href="/fr/contractor-vs-full-time-salary-calculator" class="current" aria-current="page">Calculateur prestataire vs salaire à temps plein</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/fr/">RateCalc</a> › Calculateur prestataire vs salaire à temps plein</p>
+  <h2>Calculateur prestataire vs salaire à temps plein : comment ça marche</h2>
+  <p>Une offre de 100 000 $ en tant que salarié et de 50 $ de l'heure en tant que prestataire semblent comparables, et pourtant elles ne le sont pas. Le salarié bénéficie de congés payés, d'arrêts maladie, d'une part des charges sociales payée par l'employeur, d'une assurance santé, d'une cotisation retraite et d'un ordinateur portable. Le prestataire paie tout cela avec son taux horaire et subit des périodes sans contrat que personne ne paie.</p><p>Nous avons préréglé RateCalc avec un objectif de 100 000 $ net, 15 000 $ de dépenses pour remplacer les avantages et l'équipement payés par l'employeur, un taux d'imposition de 30 %, une marge de 10 %, six heures facturables par jour et six semaines de repos. Le résultat est le tarif qui vous maintient à niveau ; la plupart des gens sont surpris de voir à quel point il dépasse salaire ÷ 2 080.</p>
+  <h2>Ce que paie un employeur et que vous paierez désormais vous-même</h2>
+  <ul><li><strong>Charges patronales.</strong> Aux États-Unis, la part employeur de la Social Security et de Medicare représente 7,65 % du salaire ; en tant que prestataire, vous payez les deux parts. Augmentez le taux d'imposition en conséquence.</li><li>Une <strong>assurance santé</strong> individuelle coûte souvent 5 000 $ à 9 000 $ par an sans subvention, davantage pour une famille. Inscrivez-la dans les dépenses.</li><li>L'<strong>abondement retraite</strong> de 3 à 6 % du salaire disparaît, sauf si vous le financez vous-même.</li><li><strong>Congés payés.</strong> Vingt jours de congés plus les jours fériés et les jours de maladie, ce sont cinq à six semaines pendant lesquelles vous ne gagnez plus rien ; c'est le champ des semaines de repos.</li><li><strong>Équipement, logiciels et formation</strong> qui arrivaient autrefois sur votre bureau.</li></ul><p>Additionnez-les honnêtement et, avec ces hypothèses, le tarif d'équilibre pour un salaire de 100 000 $ se situe bien au-dessus de 100 $ de l'heure, et non aux 48 $ que suggère salaire ÷ 2 080.</p>
+  <h2>Quand le statut de prestataire reste gagnant</h2>
+  <p>Le statut de prestataire est intéressant quand vos heures facturables restent élevées (missions longues, peu d'intercontrat), quand vous pouvez déduire de vrais frais professionnels et quand le tarif que vous pouvez obtenir dépasse largement le seuil d'équilibre. C'est une mauvaise affaire à un tarif qui ne fait qu'égaler le salaire, car vous avez aussi pris le risque que le contrat s'arrête.</p><p>Utilisez le bloc devis avec 160 heures pour obtenir un chiffre mensuel comparable à une fiche de paie, et n'oubliez pas de comparer du net avec du net : le salaire d'une offre d'emploi est avant impôts, tout comme votre tarif.</p>
+  <h2>Questions fréquentes</h2>
+  <div class="faq">
+    <details><summary>Comment convertir un salaire en taux horaire de prestataire ?</summary><p>Ajoutez les avantages et charges payés par l'employeur que vous assumez désormais, ajoutez l'équipement et une marge pour les périodes creuses, puis divisez par les heures que vous facturerez réellement dans l'année. Ce calculateur fait chaque étape ; le raccourci courant salaire ÷ 1 000 (donc 100 000 $ → 100 $/heure) est une approximation grossière de la même logique.</p></details>
+    <details><summary>Un tarif de prestataire 1099 égal à 1,5× le salaire horaire suffit-il ?</summary><p>C'est souvent le minimum. Avec l'assurance santé, les deux parts des charges sociales et les congés non payés, le seuil d'équilibre se situe souvent entre 1,5× et 2,5× l'équivalent horaire d'un salarié.</p></details>
+    <details><summary>Cela s'applique-t-il hors des États-Unis ?</summary><p>La logique, oui. Remplacez le taux d'imposition et le coût des avantages par les chiffres de votre pays (par exemple cotisations sociales et retraite) et changez la devise.</p></details>
+    <details><summary>Puis-je comparer deux scénarios côte à côte ?</summary><p>Oui, avec RateCalc Pro : enregistrez un profil pour chaque option (par exemple « contrat à 80/h » et « contrat à 95/h ») et ouvrez le tableau de comparaison.</p></details>
+  </div>
+  <p class="back-guide">Vous cherchez le guide complet, des conseils et toute la FAQ ? Consultez la <a href="/fr/">page principale de RateCalc</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Une collection d'outils gratuits et confidentiels qui fonctionnent entièrement dans votre navigateur. RateCalc est le calculateur de tarif freelance de la famille, conçu et maintenu par Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Plus d'outils gratuits</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Factures</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Tarifs freelance</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · Codes QR</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compresseur d'images</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Intérêts composés</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Sous-réseaux IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockups de captures d'écran</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockups de chats et de posts</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slides de carrousel</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formats réseaux sociaux</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Cadres photo et mockups</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Concours Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Recherche d'IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Redimensionneur d'images et de vidéos</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Ne constitue pas un conseil financier ou fiscal.</span>
+      <span><a href="/fr/privacy" data-i18n-href="/fr/privacy">Confidentialité</a> · <a href="/fr/terms" data-i18n-href="/fr/terms">Conditions</a> · <a href="#" data-action="cookie-settings">Paramètres des cookies</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Rapport de tarif freelance</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Données</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Résultats</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Répartition du chiffre d'affaires</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Devis de projet</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Généré avec RateCalc – calculateur de taux horaire freelance. Les chiffres sont des estimations basées sur les données ci-dessus et ne constituent pas un conseil financier ou fiscal.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Fermer">✕</button>
+    <h3 id="proTitle">Passer à RateCalc Pro <span class="pro-badge">À VIE</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>paiement unique</small></div>
+    <ul>
+      <li>Profils de tarif illimités</li>
+      <li>Rapport de tarif imprimable (PDF)</li>
+      <li>Comparer des profils côte à côte</li>
+      <li>Mises à jour à vie</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Passer à Pro</button>
+    <p class="hint" style="margin-top:12px">Déjà acheté ? <a href="#" data-action="toggle-license">Saisissez votre clé de licence</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Clé de licence" aria-label="Clé de licence"><button class="btn" data-action="activate-license">Activer</button></div>
+  </div>
+</div>
+<script src="/preset.js" data-q="inc=100000&amp;cur=USD&amp;exp=15000&amp;tax=30&amp;mar=10&amp;hpd=6&amp;dpw=5&amp;wo=6&amp;qh=160&amp;rush=1"></script>
+<script src="/app.js"></script>
+</body>
+</html>

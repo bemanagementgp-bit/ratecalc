@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de valor por hora para freelancers – Encontre seu valor ideal (grátis) | RateCalc</title>
+  <meta name="description" content="Calculadora grátis de valor por hora para freelancers. Informe sua renda desejada, despesas, impostos e horas faturáveis para descobrir o valor por hora, a diária e o preço por projeto que você realmente precisa cobrar.">
+  <link rel="canonical" href="https://ratecalc-tool.vercel.app/pt/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de valor por hora para freelancers – Encontre seu valor ideal (grátis) | RateCalc">
+  <meta property="og:description" content="Descubra o valor por hora de que você realmente precisa como freelancer: meta de renda, despesas, impostos, margem e horas faturáveis. Resultados instantâneos, orçamentos de projetos e um link compartilhável.">
+  <meta property="og:url" content="https://ratecalc-tool.vercel.app/pt/">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calculadora de valor por hora para freelancers – RateCalc">
+  <meta name="twitter:description" content="Descubra o valor por hora de que você precisa para atingir sua meta de renda depois de impostos, despesas e tempo não faturável. Grátis, privado, roda no seu navegador.">
+  <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RateCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"RateCalc – Calculadora de valor por hora para freelancers","url":"https://ratecalc-tool.vercel.app/","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calculadora grátis de valor por hora para freelancers que transforma sua meta de renda, despesas, alíquota e horas faturáveis nos valores por hora, por dia e por projeto que você precisa cobrar.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Metas de valor por hora, por dia, por semana e por mês","Divisão do faturamento: líquido, impostos, despesas, margem","Assistente de orçamento de projeto com multiplicador de urgência","Link compartilhável e resumo para copiar","Perfis de valores salvos e relatório de valores para imprimir (Pro)"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona a calculadora de valor por hora para freelancers?","acceptedAnswer":{"@type":"Answer","text":"Ela parte da renda líquida que você quer, soma os impostos que você vai pagar sobre ela, soma suas despesas anuais do negócio e uma margem de lucro, e então divide esse faturamento bruto pelo número de horas que você consegue faturar de forma realista em um ano (horas faturáveis por dia × dias de trabalho por semana × semanas de trabalho). O resultado é o valor mínimo por hora que leva você à sua meta."}},{"@type":"Question","name":"Qual é um bom valor por hora para freelancer?","acceptedAnswer":{"@type":"Answer","text":"Não existe um número universal. Um bom valor é aquele que cobre sua renda desejada, impostos, despesas e tempo não pago, e que o seu mercado aceita pagar. Como verificação rápida, muitos freelancers ficam entre 1,5× e 3× o equivalente por hora de um emprego CLT comparável, porque precisam cobrir benefícios, tempo parado e custos fixos por conta própria. Use a calculadora para encontrar seu piso e ajuste para cima conforme experiência, especialização e demanda."}},{"@type":"Question","name":"Devo cobrar por hora ou por projeto?","acceptedAnswer":{"@type":"Answer","text":"Cobrar por hora é mais simples para trabalhos sem escopo fechado ou mal definidos. O preço fechado por projeto recompensa sua eficiência e é mais fácil de o cliente aprovar, mas você assume o risco de subestimar. Muitos freelancers calculam um preço fechado a partir de horas estimadas × valor por hora e adicionam uma margem pelo valor e pelo risco. O assistente de orçamento de projetos desta ferramenta faz exatamente isso."}},{"@type":"Question","name":"Quantas horas por ano um freelancer consegue realmente faturar?","acceptedAnswer":{"@type":"Answer","text":"Muito menos do que 2.080. Entre buscar clientes, administração, emissão de faturas, estudo e intervalos entre projetos, a maioria dos freelancers em tempo integral fatura de 1.000 a 1.400 horas por ano — cerca de 4 a 6 horas faturáveis por dia de trabalho. A calculadora usa por padrão 5 horas faturáveis por dia, 5 dias por semana e 6 semanas de folga, o que dá 1.150 horas faturáveis."}},{"@type":"Question","name":"Preciso incluir impostos no meu valor por hora?","acceptedAnswer":{"@type":"Answer","text":"Sim. Como freelancer, ninguém retém impostos por você, então seu valor precisa cobrir imposto de renda, contribuições de autônomo ou sociais e eventuais tributos locais sobre a empresa. Informe sua alíquota efetiva (combinada) em porcentagem e a calculadora ajusta sua renda para que o que sobra depois dos impostos corresponda à sua meta."}},{"@type":"Question","name":"A calculadora de valor para freelancers é grátis?","acceptedAnswer":{"@type":"Answer","text":"Sim. Todos os cálculos, o assistente de orçamento de projeto, o resumo para copiar e o link de compartilhamento são grátis e sem cadastro, e tudo roda no seu navegador. Um upgrade Pro opcional com pagamento único adiciona perfis de valores salvos ilimitados, um relatório de valores em PDF para imprimir e comparação de perfis lado a lado."}}]}</script>
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/">
+  <link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/">
+  <link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/">
+  <link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/">
+  <link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/">
+  <link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="pt_BR">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/pt/" aria-label="Início do RateCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Calculadora de valor para freelancers</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Mais ferramentas"><span class="mt-label">Mais ferramentas</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Faturas</small></a>
+          <a href="https://ratecalc-tool.vercel.app" class="current"><span class="mi">R</span>RateCalc<small>Preços para freelancers</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>QR codes</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compressor de imagens</small></a>
+          <a href="https://growthcalc-tool.vercel.app"><span class="mi">G</span>GrowthCalc<small>Juros compostos</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Sub-redes IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockups de capturas de tela</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockups de chats e posts</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slides de carrossel</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formatos para redes sociais</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Molduras e mockups de fotos</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Sorteios no Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Consulta de IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Redimensionador de imagens e vídeos</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">por <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Instale esta ferramenta como app">⤓ Instalar</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Alternar tema">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Preços para freelancers</span>
+  <h1>Calculadora de valor por hora para freelancers</h1>
+  <p class="tagline">Informe sua meta de renda, despesas e horas faturáveis e descubra o valor por hora, a diária e o preço por projeto que você realmente precisa cobrar.</p>
+  <div class="badges">
+  <span class="badge">100% grátis</span>
+  <span class="badge">Sem cadastro</span>
+  <span class="badge">Funciona no seu navegador</span>
+  <span class="badge">Resultados ao vivo</span>
+  <span class="badge">Link compartilhável</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">Seus números</h2>
+
+          <div class="field">
+            <label for="income">Renda líquida anual desejada</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">O que você quer de fato guardar depois dos impostos, por ano.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Moeda</label>
+            <select id="currency">
+              <option value="USD">USD – Dólar americano</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – Libra esterlina</option>
+              <option value="CAD">CAD – Dólar canadense</option>
+              <option value="AUD">AUD – Dólar australiano</option>
+              <option value="INR">INR – Rupia indiana</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Despesas anuais do negócio</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Software, equipamentos, seguros, coworking, contador, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Alíquota (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Alíquota efetiva incluindo os impostos de autônomo.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Margem de lucro / segurança (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Reserva para meses fracos e imprevistos.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Horas faturáveis por dia</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Horas faturáveis por dia (número)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Tempo não faturável (administração, vendas, estudo): <strong id="nonBillable">37.5%</strong> de um dia de 8 horas.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Dias de trabalho por semana</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Semanas de folga por ano</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Férias + dias de doença + feriados.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copiar resumo</button>
+            <button class="btn" id="shareBtn" type="button">Compartilhar link</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Redefinir</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">Seu valor mínimo por hora</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">por hora faturável, para levar para casa $60,000 por ano</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Diária</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Valor semanal</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Meta de faturamento mensal</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Faturamento bruto anual necessário</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Horas faturáveis / ano</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Valor real por hora (líquido ÷ todas as horas)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Para onde vai cada dólar</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Barra que mostra a parte do faturamento bruto que vai para a renda líquida, impostos, despesas e margem.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Assistente de orçamento de projeto</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Horas estimadas</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Multiplicador de urgência</label>
+                <select id="rush">
+                  <option value="1">Nenhum (×1,0)</option>
+                  <option value="1.25">Prazo apertado (×1,25)</option>
+                  <option value="1.5">Urgente (×1,5)</option>
+                  <option value="2">Emergência (×2,0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Preço fechado sugerido</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Faixa baseada em valor (×1,2–1,5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Preço fechado = valor por hora × horas × urgência. A faixa de valor adiciona uma margem pela experiência, pelo risco e pelo resultado que você entrega.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Perfis de valores <span class="pro-badge" id="profilesBadge">1 GRÁTIS</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Comparar perfis</button>
+        </div>
+        <p class="hint">Salve configurações diferentes — "Dev web", "Design", "Consultoria" — e carregue-as depois. O plano grátis guarda um perfil; o Pro é ilimitado.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Nome do perfil (ex.: Dev web)" maxlength="40" aria-label="Nome do perfil" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Salvar perfil</button>
+          <button class="btn" id="reportBtn" type="button">Relatório de valores (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Comparar dois perfis</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Perfil A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Perfil B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Métrica</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Diferença</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Seja Pro <span class="pro-badge">VITALÍCIO</span></h3>
+        <ul>
+          <li>Perfis de valores salvos ilimitados</li>
+          <li>Relatório de valores para imprimir (PDF)</li>
+          <li>Compare perfis lado a lado</li>
+          <li>Atualizações vitalícias, pagamento único</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Seja Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Cobre com confiança</h3>
+        <p class="hint">Referências de valores, dicas de propostas e novas ferramentas grátis para freelancers. Sem spam.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="voce@email.com" aria-label="Endereço de e-mail" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Assinar</button>
+        </form>
+        <p class="hint tiny">Sem spam. Cancele quando quiser.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Receba mais rápido, do mundo todo</h2>
+    <p class="hint">Ferramentas que freelancers costumam usar para faturar e receber dinheiro de clientes internacionais. São links de afiliados: podemos receber uma comissão sem custo extra para você.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Formas populares de usar o RateCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/pt/freelance-web-developer-hourly-rate">Calculadora de valor por hora para desenvolvedores web freelancers</a></li>
+      <li><a href="/pt/graphic-designer-hourly-rate-calculator">Calculadora de valor por hora para designers gráficos</a></li>
+      <li><a href="/pt/freelance-writer-rate-calculator">Calculadora de preços para redatores freelancers</a></li>
+      <li><a href="/pt/consultant-hourly-rate-calculator">Calculadora de valor por hora para consultores</a></li>
+      <li><a href="/pt/video-editor-freelance-rate">Calculadora de preços para editores de vídeo freelancers</a></li>
+      <li><a href="/pt/virtual-assistant-hourly-rate">Calculadora de valor por hora para assistentes virtuais</a></li>
+      <li><a href="/pt/day-rate-calculator">Calculadora de diária para freelancers</a></li>
+      <li><a href="/pt/contractor-vs-full-time-salary-calculator">Calculadora de prestador de serviços vs salário CLT</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <div class="features">
+    <div class="feature"><div class="ic">⚡</div><h3>Resultados instantâneos, ao vivo</h3><p>Todos os números se atualizam enquanto você digita — metas por hora, por dia, por semana e por mês num relance.</p></div>
+    <div class="feature"><div class="ic">🧮</div><h3>Matemática do mundo real</h3><p>Considera impostos, despesas, uma margem de segurança e as horas que você não consegue faturar, não apenas salário ÷ 2.080.</p></div>
+    <div class="feature"><div class="ic">📦</div><h3>Orçamentos de projetos</h3><p>Transforme seu valor em um preço fechado com multiplicadores de urgência e uma faixa baseada em valor.</p></div>
+    <div class="feature"><div class="ic">🔒</div><h3>Privado por padrão</h3><p>Nada é enviado. Seus dados ficam no seu navegador e no link de compartilhamento que você escolher enviar.</p></div>
+  </div>
+
+  <h2>Como calcular seu valor por hora como freelancer</h2>
+  <p>A maioria dos freelancers iniciantes define seu valor olhando o que os outros cobram ou dividindo um salário antigo por 2.080 horas. As duas abordagens perdem dinheiro sem você perceber. Um valor sustentável é calculado de trás para frente a partir do que você precisa ganhar, e esta calculadora segue essa lógica passo a passo:</p>
+  <ol>
+    <li><strong>Comece pela sua meta líquida.</strong> É o que você quer de fato guardar a cada ano — o equivalente a um salário líquido.</li>
+    <li><strong>Acrescente os impostos.</strong> Divida a meta líquida por (1 − alíquota). Com uma alíquota efetiva de 25%, ficar com $60,000 exige $80,000 de lucro antes dos impostos.</li>
+    <li><strong>Adicione as despesas do negócio.</strong> Assinaturas de software, hardware, seguros, coworking, honorários do contador, marketing, cursos. Tudo isso é pago pelo seu negócio antes de você ver um centavo.</li>
+    <li><strong>Adicione uma margem.</strong> Uma margem de 10–20% cobre meses fracos, atrasos de pagamento e custos imprevistos. Sem ela, um trimestre parado deixa você no prejuízo pelo resto do ano.</li>
+    <li><strong>Conte suas horas faturáveis com honestidade.</strong> Horas faturáveis por dia × dias de trabalho por semana × (52 − semanas de folga). Cinco horas faturáveis por dia, cinco dias por semana e seis semanas de folga dão 1.150 horas — não 2.080.</li>
+    <li><strong>Divida.</strong> Faturamento bruto necessário ÷ horas faturáveis = seu valor mínimo por hora. Tudo acima disso é lucro; qualquer coisa abaixo significa que você está subsidiando seus clientes.</li>
+  </ol>
+  <p>A barra de divisão mostra como cada dólar do faturamento se divide entre renda líquida, impostos, despesas e margem, o que é um bom choque de realidade quando um valor parece "alto demais". Normalmente, só 55–70% do que você fatura vai para o seu bolso.</p>
+
+  <h2>Erros comuns ao definir um valor como freelancer</h2>
+  <h3>Copiar seu antigo salário de funcionário</h3>
+  <p>O equivalente por hora de um funcionário esconde muita coisa: impostos e benefícios pagos pelo empregador, férias remuneradas, equipamentos, treinamento e 40 horas faturáveis estáveis por semana. Como freelancer, você banca tudo isso sozinho, então igualar seu antigo valor por hora normalmente significa um corte de 30–50% na renda real.</p>
+  <h3>Esquecer o tempo não faturável</h3>
+  <p>Prospecção, propostas, reuniões, emissão de faturas, contabilidade e aprender novas ferramentas consomem facilmente 30–40% de uma semana de trabalho. Se você precifica como se toda hora fosse faturável, sua renda efetiva fica muito abaixo do que seu valor sugere. A calculadora mostra a parcela não faturável calculada para você ver isso com clareza.</p>
+  <h3>Ignorar os impostos até a conta chegar</h3>
+  <p>Autônomos pagam tanto a parte do empregado quanto a do empregador das contribuições sociais na maioria dos países, além do imposto de renda, muitas vezes em estimativas trimestrais. Inclua sua alíquota efetiva no preço desde o primeiro dia e separe o dinheiro conforme for faturando.</p>
+  <h3>Precificar sem margem</h3>
+  <p>Clientes atrasam pagamentos, projetos são pausados, notebooks quebram. Uma margem de segurança não é ganância; é a diferença entre um negócio e um hobby.</p>
+
+  <h2>Preço por hora vs por projeto vs contrato de retenção</h2>
+  <p><strong>Por hora</strong> é transparente e protege você quando o escopo não está claro, mas limita sua renda às horas trabalhadas e penaliza a eficiência. <strong>Preço por projeto (fechado)</strong> é mais fácil de o cliente aprovar e permite que você ganhe mais à medida que fica mais rápido, desde que defina bem o escopo e inclua as rodadas de revisão no preço. <strong>Contratos de retenção</strong> — uma mensalidade fixa por disponibilidade contínua ou um bloco de horas — regularizam seu fluxo de caixa e geralmente têm um pequeno desconto em troca do compromisso. Muitos freelancers usam os três: por hora para diagnóstico e manutenção, preço fechado para entregas definidas e contratos de retenção para clientes de longo prazo. Seja qual for o modelo, o piso por hora desta calculadora é o número abaixo do qual nenhum orçamento deve ficar.</p>
+
+  <h2>Como aumentar o valor com clientes atuais</h2>
+  <ul>
+    <li><strong>Avise com antecedência.</strong> 30–60 dias é o padrão; anuncie o novo valor para trabalhos que começarem após uma data específica.</li>
+    <li><strong>Comece pelo valor entregue, não pelos custos.</strong> Mencione resultados entregues e novas habilidades, em vez de dizer que seu aluguel subiu.</li>
+    <li><strong>Seja breve e confiante.</strong> Um e-mail de dois parágrafos é melhor do que uma longa justificativa. A maioria dos clientes espera aumentos periódicos.</li>
+    <li><strong>Ofereça uma alternativa.</strong> Um contrato de retenção ou um pacote pré-pago com valor um pouco menor facilita a aceitação do aumento.</li>
+    <li><strong>Aumente primeiro com clientes novos.</strong> Teste o novo valor em propostas novas e depois leve os clientes atuais até ele.</li>
+  </ul>
+
+  <h2>Uma observação sobre referências de mercado</h2>
+  <p>As "médias de valores para freelancers" publicadas variam enormemente conforme o país, a especialidade, a senioridade e a forma como a pesquisa foi feita, então trate-as como contexto, não como meta. Esta calculadora não usa dados de referência; ela calcula o valor que os <em>seus</em> números exigem. Se o resultado ficar muito acima do que o seu mercado paga, a solução geralmente é aumentar a eficiência faturável, reduzir despesas, se especializar ou buscar clientes com orçamentos maiores — e não aceitar um valor que não sustenta você.</p>
+
+  <h2>Perguntas frequentes</h2>
+  <div class="faq">
+    <details>
+      <summary>Como funciona a calculadora de valor por hora para freelancers?</summary>
+      <p>Ela parte da renda líquida que você quer, soma os impostos que você vai pagar sobre ela, soma suas despesas anuais do negócio e uma margem de lucro, e então divide esse faturamento bruto pelo número de horas que você consegue faturar de forma realista em um ano (horas faturáveis por dia × dias de trabalho por semana × semanas de trabalho). O resultado é o valor mínimo por hora que leva você à sua meta.</p>
+    </details>
+    <details>
+      <summary>Qual é um bom valor por hora para freelancer?</summary>
+      <p>Não existe um número universal. Um bom valor é aquele que cobre sua renda desejada, impostos, despesas e tempo não pago, e que o seu mercado aceita pagar. Como verificação rápida, muitos freelancers ficam entre 1,5× e 3× o equivalente por hora de um emprego CLT comparável, porque precisam cobrir benefícios, tempo parado e custos fixos por conta própria. Use a calculadora para encontrar seu piso e ajuste para cima conforme experiência, especialização e demanda.</p>
+    </details>
+    <details>
+      <summary>Devo cobrar por hora ou por projeto?</summary>
+      <p>Cobrar por hora é mais simples para trabalhos sem escopo fechado ou mal definidos. O preço fechado por projeto recompensa sua eficiência e é mais fácil de o cliente aprovar, mas você assume o risco de subestimar. Muitos freelancers calculam um preço fechado a partir de horas estimadas × valor por hora e adicionam uma margem pelo valor e pelo risco. O assistente de orçamento de projetos desta ferramenta faz exatamente isso.</p>
+    </details>
+    <details>
+      <summary>Quantas horas por ano um freelancer consegue realmente faturar?</summary>
+      <p>Muito menos do que 2.080. Entre buscar clientes, administração, emissão de faturas, estudo e intervalos entre projetos, a maioria dos freelancers em tempo integral fatura de 1.000 a 1.400 horas por ano — cerca de 4 a 6 horas faturáveis por dia de trabalho. A calculadora usa por padrão 5 horas faturáveis por dia, 5 dias por semana e 6 semanas de folga, o que dá 1.150 horas faturáveis.</p>
+    </details>
+    <details>
+      <summary>Preciso incluir impostos no meu valor por hora?</summary>
+      <p>Sim. Como freelancer, ninguém retém impostos por você, então seu valor precisa cobrir imposto de renda, contribuições de autônomo ou sociais e eventuais tributos locais sobre a empresa. Informe sua alíquota efetiva (combinada) em porcentagem e a calculadora ajusta sua renda para que o que sobra depois dos impostos corresponda à sua meta.</p>
+    </details>
+    <details>
+      <summary>A calculadora de valor para freelancers é grátis?</summary>
+      <p>Sim. Todos os cálculos, o assistente de orçamento de projeto, o resumo para copiar e o link de compartilhamento são grátis e sem cadastro, e tudo roda no seu navegador. Um upgrade Pro opcional com pagamento único adiciona perfis de valores salvos ilimitados, um relatório de valores em PDF para imprimir e comparação de perfis lado a lado.</p>
+    </details>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Uma coleção de ferramentas grátis e privadas que rodam inteiramente no seu navegador. RateCalc é a calculadora de valor por hora para freelancers da família, criada e mantida pela Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Mais ferramentas grátis</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Faturas</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Preços para freelancers</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compressor de imagens</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Juros compostos</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Sub-redes IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockups de capturas de tela</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockups de chat e post</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slides de carrossel</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formatos para redes sociais</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Molduras e mockups de fotos</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Sorteios no Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Consulta de IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Redimensionador de imagens e vídeos</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Não é consultoria financeira ou tributária.</span>
+      <span><a href="/pt/privacy" data-i18n-href="/pt/privacy">Privacidade</a> · <a href="/pt/terms" data-i18n-href="/pt/terms">Termos</a> · <a href="#" data-action="cookie-settings">Configurações de cookies</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Relatório de valor freelance</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Dados</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Resultados</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Divisão do faturamento</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Orçamento de projeto</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Gerado com o RateCalc – calculadora de valor por hora para freelancers. Os números são estimativas baseadas nos dados acima e não constituem consultoria financeira ou tributária.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Fechar">✕</button>
+    <h3 id="proTitle">Faça upgrade para o RateCalc Pro <span class="pro-badge">VITALÍCIO</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>pagamento único</small></div>
+    <ul>
+      <li>Perfis de valores ilimitados</li>
+      <li>Relatório de valores para imprimir (PDF)</li>
+      <li>Compare perfis lado a lado</li>
+      <li>Atualizações vitalícias</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Seja Pro</button>
+    <p class="hint" style="margin-top:12px">Já comprou? <a href="#" data-action="toggle-license">Digite a chave de licença</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Chave de licença" aria-label="Chave de licença"><button class="btn" data-action="activate-license">Ativar</button></div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

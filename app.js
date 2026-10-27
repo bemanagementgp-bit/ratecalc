@@ -79,20 +79,26 @@
     return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
+  // Drops prototype-polluting keys from parsed JSON (localStorage is user/extension writable).
+  const safeReviver = (k, v) => (k === '__proto__' || k === 'constructor' || k === 'prototype') ? undefined : v;
+  const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+  const safeUrl = (u) => /^https?:\/\//i.test(String(u || '').trim()) ? String(u).trim() : '';
+
   // ---------- State ----------
   let state = Object.assign({}, DEFAULTS);
 
   function sanitize(s) {
     const o = {};
-    o.income = Math.max(0, num(s.income, DEFAULTS.income));
-    o.currency = CURRENCY_SYMBOL[s.currency] ? s.currency : DEFAULTS.currency;
-    o.expenses = Math.max(0, num(s.expenses, DEFAULTS.expenses));
+    s = s && typeof s === 'object' ? s : {};
+    o.income = clamp(num(s.income, DEFAULTS.income), 0, 1e10);
+    o.currency = own(CURRENCY_SYMBOL, s.currency) ? s.currency : DEFAULTS.currency;
+    o.expenses = clamp(num(s.expenses, DEFAULTS.expenses), 0, 1e10);
     o.taxRate = clamp(num(s.taxRate, DEFAULTS.taxRate), 0, 99);
     o.margin = clamp(num(s.margin, DEFAULTS.margin), 0, 500);
     o.hoursPerDay = clamp(num(s.hoursPerDay, DEFAULTS.hoursPerDay), 1, 12);
     o.daysPerWeek = clamp(Math.round(num(s.daysPerWeek, DEFAULTS.daysPerWeek)), 1, 7);
     o.weeksOff = clamp(num(s.weeksOff, DEFAULTS.weeksOff), 0, 51);
-    o.quoteHours = Math.max(0, num(s.quoteHours, DEFAULTS.quoteHours));
+    o.quoteHours = clamp(num(s.quoteHours, DEFAULTS.quoteHours), 0, 1e6);
     o.rush = clamp(num(s.rush, DEFAULTS.rush), 1, 10);
     return o;
   }
@@ -213,7 +219,7 @@
   function loadSaved() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) return JSON.parse(raw);
+      if (raw) { const v = JSON.parse(raw, safeReviver); return v && typeof v === 'object' && !Array.isArray(v) ? v : null; }
     } catch (e) { /* ignore */ }
     return null;
   }
@@ -222,7 +228,7 @@
     let any = false;
     const out = {};
     Object.keys(URL_KEYS).forEach((k) => {
-      if (p.has(k)) { out[URL_KEYS[k]] = p.get(k); any = true; }
+      if (p.has(k)) { out[URL_KEYS[k]] = String(p.get(k)).slice(0, 32); any = true; }
     });
     return any ? out : null;
   }
@@ -281,8 +287,14 @@
   function getProfiles() {
     try {
       const raw = localStorage.getItem(PROFILES_KEY);
-      const arr = raw ? JSON.parse(raw) : [];
-      return Array.isArray(arr) ? arr : [];
+      const arr = raw ? JSON.parse(raw, safeReviver) : [];
+      // Normalise entries: localStorage is untrusted (ids/names end up in HTML).
+      return Array.isArray(arr) ? arr.filter((p) => p && typeof p === 'object').slice(0, 500).map((p) => ({
+        id: String(p.id == null ? '' : p.id).replace(/[^\w-]/g, '').slice(0, 40),
+        name: String(p.name == null ? '' : p.name).slice(0, 120),
+        inputs: sanitize(p.inputs),
+        savedAt: num(p.savedAt, 0)
+      })) : [];
     } catch (e) { return []; }
   }
   function setProfiles(arr) {
@@ -290,7 +302,7 @@
   }
 
   function saveProfile() {
-    const name = (el.profileName.value || '').trim();
+    const name = (el.profileName.value || '').trim().slice(0, 120);
     if (!name) { toast('Give the profile a name first'); el.profileName.focus(); return; }
     const profiles = getProfiles();
     const existingIdx = profiles.findIndex((p) => p.name.toLowerCase() === name.toLowerCase());
@@ -337,9 +349,9 @@
     } else {
       el.profileList.innerHTML = profiles.map((p) => {
         const r = calculate(sanitize(p.inputs));
-        return '<li data-id="' + p.id + '">' +
+        return '<li data-id="' + escapeHtml(p.id) + '">' +
           '<div class="p-main"><strong>' + escapeHtml(p.name) + '</strong>' +
-          '<span class="p-rate">' + fmtMoney(r.hourly, p.inputs.currency, 0) + '/h · ' + fmtNum(r.billableHours) + ' h/yr</span></div>' +
+          '<span class="p-rate">' + escapeHtml(fmtMoney(r.hourly, p.inputs.currency, 0)) + '/h · ' + fmtNum(r.billableHours) + ' h/yr</span></div>' +
           '<div class="p-actions">' +
           '<button class="btn btn-sm" data-action="load" type="button">Load</button>' +
           '<button class="btn btn-sm btn-danger" data-action="delete" type="button" aria-label="Delete ' + escapeHtml(p.name) + '">Delete</button>' +
@@ -356,7 +368,7 @@
 
   // ---------- Compare (Pro) ----------
   function renderCompareOptions(profiles) {
-    const opts = profiles.map((p) => '<option value="' + p.id + '">' + escapeHtml(p.name) + '</option>').join('');
+    const opts = profiles.map((p) => '<option value="' + escapeHtml(p.id) + '">' + escapeHtml(p.name) + '</option>').join('');
     const a = el.compareA.value, b = el.compareB.value;
     el.compareA.innerHTML = opts; el.compareB.innerHTML = opts;
     if (profiles.length) {
@@ -467,11 +479,11 @@
   ];
   function renderPartners() {
     const links = C.AFFILIATE_LINKS || {};
-    const active = PARTNERS.filter((p) => typeof links[p.key] === 'string' && links[p.key].trim() !== '');
+    const active = PARTNERS.filter((p) => typeof links[p.key] === 'string' && safeUrl(links[p.key]) !== '');
     if (!active.length) { el.partnersSection.classList.add('hidden'); return; }
     el.partnerGrid.innerHTML = active.map((p) =>
       '<div class="partner"><h3>' + p.name + '</h3><p>' + p.blurb + '</p>' +
-      '<a class="btn btn-primary btn-sm" href="' + escapeHtml(links[p.key]) + '" target="_blank" rel="sponsored noopener" data-partner="' + p.key + '">' + p.cta + ' →</a></div>'
+      '<a class="btn btn-primary btn-sm" href="' + escapeHtml(safeUrl(links[p.key])) + '" target="_blank" rel="sponsored noopener noreferrer" data-partner="' + p.key + '">' + p.cta + ' →</a></div>'
     ).join('');
     el.partnerGrid.querySelectorAll('a[data-partner]').forEach((a) =>
       a.addEventListener('click', () => track('affiliate_click', { partner: a.dataset.partner }))

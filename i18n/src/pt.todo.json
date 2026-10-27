@@ -1,0 +1,5 @@
+[
+  "+ escapeHtml(p.id) +",
+  "+ escapeHtml(safeUrl(links[p.key])) +",
+  "RateCalc"
+]

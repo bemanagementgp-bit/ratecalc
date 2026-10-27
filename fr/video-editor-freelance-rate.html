@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculateur de tarifs pour monteur vidéo freelance – À l'heure et par projet | RateCalc</title>
+  <meta name="description" content="Calculateur gratuit de tarifs pour monteur vidéo freelance. Fixez le prix de vos montages à l'heure, à la journée ou à la minute finie à partir de votre objectif de revenu, de vos coûts de matériel et de logiciels, de vos impôts et de vos heures réelles.">
+  <link rel="canonical" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculateur de tarifs pour monteur vidéo freelance – À l'heure et par projet | RateCalc">
+  <meta property="og:description" content="Calculateur gratuit de tarifs pour monteur vidéo freelance. Fixez le prix de vos montages à l'heure, à la journée ou à la minute finie à partir de votre objectif de revenu, de vos coûts de matériel et de logiciels, de vos impôts et de vos heures réelles.">
+  <meta property="og:url" content="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calculateur de tarifs pour monteur vidéo freelance – À l'heure et par projet | RateCalc">
+  <meta name="twitter:description" content="Calculateur gratuit de tarifs pour monteur vidéo freelance. Fixez le prix de vos montages à l'heure, à la journée ou à la minute finie à partir de votre objectif de revenu, de vos coûts de matériel et de logiciels, de vos impôts et de vos heures réelles.">
+  <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RateCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Calculateur de tarifs pour monteur vidéo freelance – À l'heure et par projet | RateCalc","description":"Calculateur gratuit de tarifs pour monteur vidéo freelance. Fixez le prix de vos montages à l'heure, à la journée ou à la minute finie à partir de votre objectif de revenu, de vos coûts de matériel et de logiciels, de vos impôts et de vos heures réelles.","url":"https://ratecalc-tool.vercel.app/video-editor-freelance-rate","isPartOf":{"@type":"WebSite","name":"RateCalc","url":"https://ratecalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RateCalc","item":"https://ratecalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Calculateur de tarifs pour monteur vidéo freelance","item":"https://ratecalc-tool.vercel.app/video-editor-freelance-rate"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Combien facturent les monteurs vidéo freelances à l'heure ?","acceptedAnswer":{"@type":"Answer","text":"Généralement 40 $ à 100 $ de l'heure, les monteurs expérimentés en publicité, télévision ou motion design facturant 100 $ à 175 $. Le marché et la niche comptent plus que les années d'expérience."}},{"@type":"Question","name":"Combien facturer par minute de vidéo finie ?","acceptedAnswer":{"@type":"Answer","text":"Multipliez le temps que vous prend une minute de ce format par votre taux horaire. Pour un montage simple face caméra à 95 $ de l'heure et 1,5 heure par minute, cela fait environ 140 $ par minute finie."}},{"@type":"Question","name":"Dois-je facturer un supplément d'urgence ?","acceptedAnswer":{"@type":"Answer","text":"Oui, généralement 25 à 50 % de plus pour des délais de moins de 48 heures. Réglez le multiplicateur d'urgence dans le bloc devis pour voir l'effet sur une mission précise."}},{"@type":"Question","name":"Puis-je enregistrer différents tarifs pour différents types de travail ?","acceptedAnswer":{"@type":"Answer","text":"Avec RateCalc Pro, vous pouvez enregistrer des profils nommés (par exemple Montages YouTube, Publicité) et les comparer côte à côte."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate">
+  <link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate">
+  <link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate">
+  <link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate">
+  <link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate">
+  <link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate">
+  <link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="fr_FR">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/fr/" aria-label="Accueil RateCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Calculateur de tarif freelance</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Plus d'outils"><span class="mt-label">Plus d'outils</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Factures</small></a>
+          <a href="https://ratecalc-tool.vercel.app" class="current"><span class="mi">R</span>RateCalc<small>Tarifs freelance</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>Codes QR</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compresseur d'images</small></a>
+          <a href="https://growthcalc-tool.vercel.app"><span class="mi">G</span>GrowthCalc<small>Intérêts composés</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Sous-réseaux IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockups de captures d'écran</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockups de chats et de posts</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slides de carrousel</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formats pour réseaux sociaux</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Cadres photo et mockups</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Concours Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Recherche d'adresse IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Redimensionnement d'images et de vidéos</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">par <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Installer cet outil comme une app">⤓ Installer</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Changer de thème">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Tarifs freelance · Monteurs vidéo</span>
+  <h1>Calculateur de tarifs pour monteur vidéo freelance</h1>
+  <p class="tagline">Calculez le taux horaire dont un monteur vidéo freelance a besoin pour couvrir son matériel, ses logiciels, le temps de rendu et ses impôts, puis convertissez-le en prix par projet et par minute.</p>
+  <div class="badges">
+  <span class="badge">100 % gratuit</span>
+  <span class="badge">Sans inscription</span>
+  <span class="badge">Fonctionne dans votre navigateur</span>
+  <span class="badge">Résultats en direct</span>
+  <span class="badge">Lien partageable</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">Vos chiffres</h2>
+
+          <div class="field">
+            <label for="income">Revenu net annuel souhaité</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">Ce que vous voulez réellement garder après impôts, par an.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Devise</label>
+            <select id="currency">
+              <option value="USD">USD – Dollar américain</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – Livre sterling</option>
+              <option value="CAD">CAD – Dollar canadien</option>
+              <option value="AUD">AUD – Dollar australien</option>
+              <option value="INR">INR – Roupie indienne</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Frais professionnels annuels</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Logiciels, équipement, assurance, coworking, comptable, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Taux d'imposition (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Taux effectif, cotisations d'indépendant comprises.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Marge bénéficiaire / de sécurité (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Coussin pour les mois creux et les imprévus.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Heures facturables par jour</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Heures facturables par jour (nombre)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Temps non facturable (administratif, prospection, formation) : <strong id="nonBillable">37,5 %</strong> d'une journée de 8 heures.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Jours travaillés par semaine</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Semaines de repos par an</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Vacances + jours de maladie + jours fériés.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copier le résumé</button>
+            <button class="btn" id="shareBtn" type="button">Lien de partage</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Réinitialiser</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">Votre taux horaire minimum</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">par heure facturable, pour gagner 60 000 $ net par an</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Tarif journalier</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Tarif hebdomadaire</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Objectif de chiffre d'affaires mensuel</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Chiffre d'affaires brut annuel nécessaire</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Heures facturables / an</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Taux horaire réel (net ÷ toutes les heures)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Où va chaque dollar</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Barre montrant la part du chiffre d'affaires brut consacrée au revenu net, aux impôts, aux dépenses et à la marge.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Assistant de devis de projet</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Heures estimées</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Multiplicateur d'urgence</label>
+                <select id="rush">
+                  <option value="1">Aucune (×1,0)</option>
+                  <option value="1.25">Délai serré (×1,25)</option>
+                  <option value="1.5">Urgent (×1,5)</option>
+                  <option value="2">Urgence (×2,0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Prix forfaitaire suggéré</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Fourchette basée sur la valeur (×1,2–1,5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Prix forfaitaire = taux horaire × heures × urgence. La fourchette de valeur ajoute une marge pour l'expertise, le risque et le résultat que vous apportez.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Profils de tarif <span class="pro-badge" id="profilesBadge">1 GRATUIT</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Comparer des profils</button>
+        </div>
+        <p class="hint">Enregistrez différentes configurations — « Dév web », « Design », « Conseil » — et rechargez-les plus tard. Le plan gratuit stocke un profil ; Pro est illimité.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Nom du profil (ex. Dév web)" maxlength="40" aria-label="Nom du profil" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Enregistrer le profil</button>
+          <button class="btn" id="reportBtn" type="button">Rapport de tarif (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Comparer deux profils</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Profil A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Profil B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Indicateur</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Différence</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Passer à Pro <span class="pro-badge">À VIE</span></h3>
+        <ul>
+          <li>Profils de tarif enregistrés illimités</li>
+          <li>Rapport de tarif imprimable (PDF)</li>
+          <li>Comparer des profils côte à côte</li>
+          <li>Mises à jour à vie, un seul paiement</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Passer à Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Fixez vos prix en toute confiance</h3>
+        <p class="hint">Références de tarifs, conseils pour vos propositions et nouveaux outils gratuits pour freelances. Pas de spam.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="vous@email.com" aria-label="Adresse e-mail" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">S'abonner</button>
+        </form>
+        <p class="hint tiny">Pas de spam. Désabonnement à tout moment.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Soyez payé plus vite, partout dans le monde</h2>
+    <p class="hint">Des outils couramment utilisés par les freelances pour facturer et recevoir des paiements de clients internationaux. Ce sont des liens d'affiliation : nous pouvons percevoir une commission sans coût supplémentaire pour vous.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Plus de façons d'utiliser RateCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/fr/freelance-web-developer-hourly-rate">Calculateur de taux horaire pour développeur web freelance</a></li>
+      <li><a href="/fr/graphic-designer-hourly-rate-calculator">Calculateur de taux horaire pour graphiste</a></li>
+      <li><a href="/fr/freelance-writer-rate-calculator">Calculateur de tarifs pour rédacteur freelance</a></li>
+      <li><a href="/fr/consultant-hourly-rate-calculator">Calculateur de taux horaire pour consultants</a></li>
+      <li><a href="/fr/video-editor-freelance-rate" class="current" aria-current="page">Calculateur de tarifs pour monteur vidéo freelance</a></li>
+      <li><a href="/fr/virtual-assistant-hourly-rate">Calculateur de taux horaire pour assistant virtuel</a></li>
+      <li><a href="/fr/day-rate-calculator">Calculateur de tarif journalier freelance</a></li>
+      <li><a href="/fr/contractor-vs-full-time-salary-calculator">Calculateur prestataire vs salaire à temps plein</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/fr/">RateCalc</a> › Calculateur de tarifs pour monteur vidéo freelance</p>
+  <h2>Calculateur de tarifs pour monteur vidéo freelance : comment ça marche</h2>
+  <p>Le montage vidéo a des frais généraux inhabituellement élevés pour un travail de bureau : une station de travail rapide, un stockage rapide, des plug-ins, des licences de musique et d'images, et une suite logicielle facturée chaque mois que vous montiez ou non. Les tarifs qui ignorent ces coûts semblent généreux à l'heure et ne laissent rien pour remplacer un disque qui lâche en plein projet.</p><p>Le préréglage utilise un objectif de 70 000 $ net, environ 8 000 $ par an d'amortissement du matériel et d'abonnements, un taux d'imposition de 25 % et cinq heures facturables par jour. Le temps de rendu et d'export ne compte comme facturable que si vous travaillez activement sur le projet pendant ce temps.</p>
+  <h2>Tarification à l'heure, à la minute finie ou au projet</h2>
+  <p>Les monteurs utilisent trois unités, et les clients poussent pour celle qui paraît la moins chère. Ancrez les trois au chiffre horaire du calculateur :</p><ul><li><strong>À l'heure</strong> pour le travail ouvert : nouveaux montages, projets d'entreprise avec beaucoup de retours, assistance sur le montage de quelqu'un d'autre.</li><li><strong>À la minute finie</strong> pour les formats prévisibles. Chronométrez quelques anciennes missions : une vidéo YouTube face caméra demande souvent 1 à 2 heures par minute finie ; les publicités sociales riches en motion design peuvent en demander 4 à 8. Multipliez par votre taux.</li><li><strong>Par projet</strong> pour les forfaits (un film de mariage, un cours de dix leçons) avec un nombre défini de tours de révision et les tours supplémentaires facturés à l'heure.</li></ul><p>Le bloc devis applique un multiplicateur d'urgence, utile quand un client a besoin du montage pour demain matin.</p>
+  <h2>Coûts et temps non facturable propres aux monteurs</h2>
+  <p>Inscrivez un montant d'amortissement réaliste dans les dépenses : une station de travail à 4 000 $ et 1 500 $ de disques remplacés tous les trois ans représentent déjà 1 800 $ par an, avant les logiciels, plug-ins et licences. Pensez ensuite au temps non facturable : ingérer et sauvegarder les rushes, télécharger les fichiers du client, synchroniser le son et attendre les retours sont rarement détaillés mais arrivent toujours. Facturez-les sous forme de forfait de gestion des médias, ou gardez des heures facturables par jour honnêtes pour que le tarif les absorbe.</p><p>Enfin, protégez votre tarif avec des conditions : rushes livrés organisés et nommés, nombre défini de tours de révision et acompte de 50 % avant le premier montage.</p>
+  <h2>Questions fréquentes</h2>
+  <div class="faq">
+    <details><summary>Combien facturent les monteurs vidéo freelances à l'heure ?</summary><p>Généralement 40 $ à 100 $ de l'heure, les monteurs expérimentés en publicité, télévision ou motion design facturant 100 $ à 175 $. Le marché et la niche comptent plus que les années d'expérience.</p></details>
+    <details><summary>Combien facturer par minute de vidéo finie ?</summary><p>Multipliez le temps que vous prend une minute de ce format par votre taux horaire. Pour un montage simple face caméra à 95 $ de l'heure et 1,5 heure par minute, cela fait environ 140 $ par minute finie.</p></details>
+    <details><summary>Dois-je facturer un supplément d'urgence ?</summary><p>Oui, généralement 25 à 50 % de plus pour des délais de moins de 48 heures. Réglez le multiplicateur d'urgence dans le bloc devis pour voir l'effet sur une mission précise.</p></details>
+    <details><summary>Puis-je enregistrer différents tarifs pour différents types de travail ?</summary><p>Avec RateCalc Pro, vous pouvez enregistrer des profils nommés (par exemple Montages YouTube, Publicité) et les comparer côte à côte.</p></details>
+  </div>
+  <p class="back-guide">Vous cherchez le guide complet, des conseils et toute la FAQ ? Consultez la <a href="/fr/">page principale de RateCalc</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Une collection d'outils gratuits et confidentiels qui fonctionnent entièrement dans votre navigateur. RateCalc est le calculateur de tarif freelance de la famille, conçu et maintenu par Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Plus d'outils gratuits</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Factures</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Tarifs freelance</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · Codes QR</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compresseur d'images</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Intérêts composés</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Sous-réseaux IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockups de captures d'écran</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockups de chats et de posts</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slides de carrousel</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formats réseaux sociaux</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Cadres photo et mockups</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Concours Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Recherche d'IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Redimensionneur d'images et de vidéos</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Ne constitue pas un conseil financier ou fiscal.</span>
+      <span><a href="/fr/privacy" data-i18n-href="/fr/privacy">Confidentialité</a> · <a href="/fr/terms" data-i18n-href="/fr/terms">Conditions</a> · <a href="#" data-action="cookie-settings">Paramètres des cookies</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Rapport de tarif freelance</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Données</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Résultats</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Répartition du chiffre d'affaires</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Devis de projet</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Généré avec RateCalc – calculateur de taux horaire freelance. Les chiffres sont des estimations basées sur les données ci-dessus et ne constituent pas un conseil financier ou fiscal.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Fermer">✕</button>
+    <h3 id="proTitle">Passer à RateCalc Pro <span class="pro-badge">À VIE</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>paiement unique</small></div>
+    <ul>
+      <li>Profils de tarif illimités</li>
+      <li>Rapport de tarif imprimable (PDF)</li>
+      <li>Comparer des profils côte à côte</li>
+      <li>Mises à jour à vie</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Passer à Pro</button>
+    <p class="hint" style="margin-top:12px">Déjà acheté ? <a href="#" data-action="toggle-license">Saisissez votre clé de licence</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Clé de licence" aria-label="Clé de licence"><button class="btn" data-action="activate-license">Activer</button></div>
+  </div>
+</div>
+<script src="/preset.js" data-q="inc=70000&amp;cur=USD&amp;exp=8000&amp;tax=25&amp;mar=10&amp;hpd=5&amp;dpw=5&amp;wo=5&amp;qh=12&amp;rush=1.25"></script>
+<script src="/app.js"></script>
+</body>
+</html>

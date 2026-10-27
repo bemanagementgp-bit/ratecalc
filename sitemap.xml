@@ -1,14 +1,597 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ratecalc-tool.vercel.app/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/video-editor-freelance-rate</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/day-rate-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/privacy</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://ratecalc-tool.vercel.app/terms</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/consultant-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/consultant-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/consultant-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/consultant-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/consultant-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/consultant-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/consultant-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/day-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/day-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/day-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/day-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/day-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/day-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/day-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/day-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/freelance-web-developer-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/freelance-web-developer-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/freelance-web-developer-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/freelance-web-developer-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/freelance-web-developer-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-web-developer-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-web-developer-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/freelance-writer-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/freelance-writer-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/freelance-writer-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/freelance-writer-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/freelance-writer-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/freelance-writer-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/freelance-writer-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/graphic-designer-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/graphic-designer-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/graphic-designer-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/graphic-designer-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/graphic-designer-hourly-rate-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/graphic-designer-hourly-rate-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/graphic-designer-hourly-rate-calculator"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/video-editor-freelance-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/video-editor-freelance-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/video-editor-freelance-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/es/virtual-assistant-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/pt/virtual-assistant-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/fr/virtual-assistant-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/de/virtual-assistant-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+  </url>
+  <url><loc>https://ratecalc-tool.vercel.app/it/virtual-assistant-hourly-rate</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/virtual-assistant-hourly-rate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/virtual-assistant-hourly-rate"/>
+  </url>
 </urlset>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calcolatore tariffa oraria freelance – Trova la tua tariffa ideale (gratis) | RateCalc</title>
+  <meta name="description" content="Calcolatore gratuito della tariffa oraria freelance. Inserisci reddito obiettivo, spese, imposte e ore fatturabili per ottenere la tariffa oraria, giornaliera e a progetto che devi davvero chiedere.">
+  <link rel="canonical" href="https://ratecalc-tool.vercel.app/it/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calcolatore tariffa oraria freelance – Trova la tua tariffa ideale (gratis) | RateCalc">
+  <meta property="og:description" content="Calcola la tariffa oraria freelance che ti serve davvero: obiettivo di reddito, spese, imposte, margine e ore fatturabili. Risultati immediati, preventivi di progetto e un link condivisibile.">
+  <meta property="og:url" content="https://ratecalc-tool.vercel.app/it/">
+  <meta property="og:site_name" content="RateCalc">
+  <meta property="og:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calcolatore tariffa oraria freelance – RateCalc">
+  <meta name="twitter:description" content="Scopri la tariffa oraria che ti serve per raggiungere il tuo obiettivo di reddito al netto di imposte, spese e tempo non fatturabile. Gratis, privato, funziona nel tuo browser.">
+  <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RateCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"RateCalc – Calcolatore tariffa oraria freelance","url":"https://ratecalc-tool.vercel.app/","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calcolatore gratuito della tariffa oraria freelance che trasforma obiettivo di reddito, spese, aliquota e ore fatturabili nelle tariffe orarie, giornaliere e a progetto che devi chiedere.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Obiettivi di tariffa oraria, giornaliera, settimanale e mensile","Ripartizione del fatturato: netto, imposte, spese, margine","Assistente preventivo di progetto con moltiplicatore di urgenza","Link condivisibile e riepilogo copiabile","Profili tariffa salvati e report tariffe stampabile (Pro)"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Come funziona il calcolatore della tariffa oraria freelance?","acceptedAnswer":{"@type":"Answer","text":"Parte dal reddito netto che desideri, aggiunge le imposte che dovrai pagarci sopra, aggiunge le spese annuali dell'attività e un margine di utile, poi divide questo fatturato lordo per il numero di ore che puoi realisticamente fatturare in un anno (ore fatturabili al giorno × giorni lavorativi a settimana × settimane lavorative). Il risultato è la tariffa oraria minima per raggiungere il tuo obiettivo."}},{"@type":"Question","name":"Qual è una buona tariffa oraria freelance?","acceptedAnswer":{"@type":"Answer","text":"Non esiste un numero universale. Una buona tariffa è quella che copre reddito obiettivo, imposte, spese e tempo non pagato, e che il tuo mercato è disposto a pagare. Come verifica di massima, molti freelance si collocano tra 1.5× e 3× l'equivalente orario di un lavoro dipendente comparabile, perché devono coprire da soli benefit, tempi morti e costi generali. Usa il calcolatore per la soglia minima, poi aumenta in base a esperienza, specializzazione e domanda."}},{"@type":"Question","name":"Conviene fatturare a ore o a progetto?","acceptedAnswer":{"@type":"Answer","text":"La fatturazione a ore è la più semplice per lavori aperti o poco definiti. Il prezzo fisso a progetto premia la tua efficienza ed è più facile da approvare per i clienti, ma ti accolli il rischio di sottostimare. Molti freelance calcolano un prezzo fisso da ore stimate × tariffa oraria, poi aggiungono un margine per valore e rischio. L'assistente preventivo di questo strumento fa esattamente questo."}},{"@type":"Question","name":"Quante ore all'anno può fatturare davvero un freelance?","acceptedAnswer":{"@type":"Answer","text":"Molte meno di 2,080. Tra ricerca clienti, amministrazione, fatturazione, formazione e pause tra un progetto e l'altro, la maggior parte dei freelance a tempo pieno fattura da 1,000 a 1,400 ore l'anno, circa 4–6 ore fatturabili per giorno lavorativo. Il calcolatore usa di default 5 ore fatturabili al giorno, 5 giorni a settimana e 6 settimane di stop, cioè 1,150 ore fatturabili."}},{"@type":"Question","name":"Devo includere le imposte nella mia tariffa oraria?","acceptedAnswer":{"@type":"Answer","text":"Sì. Da freelance nessuno trattiene le imposte per te, quindi la tua tariffa deve coprire imposta sul reddito, contributi da lavoro autonomo o previdenziali ed eventuali imposte locali sull'attività. Inserisci la tua aliquota effettiva (media) come percentuale e il calcolatore lordizza il reddito in modo che ciò che resta dopo le imposte corrisponda al tuo obiettivo."}},{"@type":"Question","name":"Il calcolatore di tariffe freelance è gratis?","acceptedAnswer":{"@type":"Answer","text":"Sì. Tutti i calcoli, l'assistente preventivo, la copia del riepilogo e il link di condivisione sono gratuiti senza registrazione e tutto funziona nel tuo browser. Un upgrade Pro opzionale una tantum aggiunge profili tariffa salvati illimitati, un report tariffe in PDF stampabile e il confronto affiancato dei profili."}}]}</script>
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/">
+  <link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/">
+  <link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/">
+  <link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/">
+  <link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/">
+  <link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="it_IT">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/it/" aria-label="Home di RateCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">RateCalc</span><span class="brand-desc">Calcolatore tariffe freelance</span></span>
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Altri strumenti"><span class="mt-label">Altri strumenti</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Fatture</small></a>
+          <a href="https://ratecalc-tool.vercel.app" class="current"><span class="mi">R</span>RateCalc<small>Tariffe freelance</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>Codici QR</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compressore di immagini</small></a>
+          <a href="https://growthcalc-tool.vercel.app"><span class="mi">G</span>GrowthCalc<small>Interesse composto</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Subnet IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockup di screenshot</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockup di chat e post</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slide per caroselli</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formati social</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Cornici e mockup per foto</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Giveaway su Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Ricerca IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Ridimensiona immagini e video</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">di <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Installa questo strumento come app">⤓ Installa</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Cambia tema">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Prezzi freelance</span>
+  <h1>Calcolatore tariffa oraria freelance</h1>
+  <p class="tagline">Inserisci il tuo obiettivo di reddito, le spese e le ore fatturabili e ottieni la tariffa oraria, giornaliera e a progetto che devi davvero chiedere.</p>
+  <div class="badges">
+  <span class="badge">100% gratis</span>
+  <span class="badge">Nessuna registrazione</span>
+  <span class="badge">Funziona nel tuo browser</span>
+  <span class="badge">Risultati in tempo reale</span>
+  <span class="badge">Link condivisibile</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-main">
+
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <section class="card" aria-labelledby="inputsTitle">
+          <h2 id="inputsTitle">I tuoi numeri</h2>
+
+          <div class="field">
+            <label for="income">Reddito netto annuo desiderato</label>
+            <div class="input-affix">
+              <span class="affix" id="incomeAffix">$</span>
+              <input type="number" id="income" min="0" step="1000" value="60000" inputmode="numeric">
+            </div>
+            <p class="hint">Ciò che vuoi davvero tenerti dopo le imposte, all'anno.</p>
+          </div>
+
+          <div class="field">
+            <label for="currency">Valuta</label>
+            <select id="currency">
+              <option value="USD">USD – Dollaro statunitense</option>
+              <option value="EUR">EUR – Euro</option>
+              <option value="GBP">GBP – Sterlina britannica</option>
+              <option value="CAD">CAD – Dollaro canadese</option>
+              <option value="AUD">AUD – Dollaro australiano</option>
+              <option value="INR">INR – Rupia indiana</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="expenses">Spese annuali dell'attività</label>
+            <div class="input-affix">
+              <span class="affix" id="expensesAffix">$</span>
+              <input type="number" id="expenses" min="0" step="100" value="6000" inputmode="numeric">
+            </div>
+            <p class="hint">Software, attrezzatura, assicurazione, coworking, commercialista, marketing…</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="taxRate">Aliquota (%)</label>
+              <input type="number" id="taxRate" min="0" max="80" step="0.5" value="25" inputmode="decimal">
+              <p class="hint">Aliquota effettiva inclusi i contributi da lavoro autonomo.</p>
+            </div>
+            <div class="field">
+              <label for="margin">Margine di utile / sicurezza (%)</label>
+              <input type="number" id="margin" min="0" max="100" step="1" value="10" inputmode="decimal">
+              <p class="hint">Cuscinetto per i mesi lenti e gli imprevisti.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="row-between">
+              <label for="hoursPerDay" style="margin:0">Ore fatturabili al giorno</label>
+              <input type="number" id="hoursPerDayNum" class="num-sm" min="1" max="12" step="0.5" value="5" aria-label="Ore fatturabili al giorno (numero)">
+            </div>
+            <input type="range" id="hoursPerDay" min="1" max="12" step="0.5" value="5">
+            <p class="hint">Tempo non fatturabile (amministrazione, vendita, formazione): <strong id="nonBillable">37.5%</strong> su una giornata di 8 ore.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="daysPerWeek">Giorni lavorativi a settimana</label>
+              <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="weeksOff">Settimane di stop all'anno</label>
+              <input type="number" id="weeksOff" min="0" max="30" step="1" value="6" inputmode="numeric">
+              <p class="hint">Ferie + malattie + festività.</p>
+            </div>
+          </div>
+
+          <div class="row actions-row no-print">
+            <button class="btn" id="copyBtn" type="button">Copia riepilogo</button>
+            <button class="btn" id="shareBtn" type="button">Link di condivisione</button>
+            <button class="btn btn-ghost" id="resetBtn" type="button">Ripristina</button>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <div class="results-col">
+          <section class="card result-card" aria-live="polite" aria-labelledby="resultTitle">
+            <h2 id="resultTitle" class="k-label">La tua tariffa oraria minima</h2>
+            <div class="result-big" id="hourlyRate">$0</div>
+            <p class="hint" id="rateSub">per ora fatturabile, per portare a casa $60,000 l'anno</p>
+
+            <div class="stats-grid">
+              <div class="stat"><div class="k">Tariffa giornaliera</div><div class="v" id="dailyRate">–</div></div>
+              <div class="stat"><div class="k">Tariffa settimanale</div><div class="v" id="weeklyRate">–</div></div>
+              <div class="stat"><div class="k">Obiettivo di fatturato mensile</div><div class="v" id="monthlyRevenue">–</div></div>
+              <div class="stat"><div class="k">Fatturato lordo annuo necessario</div><div class="v" id="annualGross">–</div></div>
+              <div class="stat"><div class="k">Ore fatturabili / anno</div><div class="v" id="billableHours">–</div></div>
+              <div class="stat"><div class="k">Tariffa oraria reale (netto ÷ tutte le ore)</div><div class="v" id="realHourly">–</div></div>
+            </div>
+
+            <h3 class="k-label" style="margin-top:20px">Dove va ogni dollaro</h3>
+            <div class="breakdown" id="breakdown">
+              <svg id="breakdownSvg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="breakdownDesc" width="100%" height="18"></svg>
+              <p id="breakdownDesc" class="sr-only">Barra che mostra la quota del fatturato lordo destinata a reddito netto, imposte, spese e margine.</p>
+              <ul class="legend" id="breakdownLegend"></ul>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="quoteTitle">
+            <h2 id="quoteTitle">Assistente preventivo di progetto</h2>
+            <div class="grid-2">
+              <div class="field">
+                <label for="quoteHours">Ore stimate</label>
+                <input type="number" id="quoteHours" min="0" step="1" value="40" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="rush">Moltiplicatore di urgenza</label>
+                <select id="rush">
+                  <option value="1">Nessuna (×1.0)</option>
+                  <option value="1.25">Scadenza stretta (×1.25)</option>
+                  <option value="1.5">Urgente (×1.5)</option>
+                  <option value="2">Emergenza (×2.0)</option>
+                </select>
+              </div>
+            </div>
+            <div class="stats-grid two">
+              <div class="stat"><div class="k">Prezzo fisso suggerito</div><div class="v" id="quoteFixed">–</div></div>
+              <div class="stat"><div class="k">Forchetta basata sul valore (×1.2–1.5)</div><div class="v" id="quoteRange">–</div></div>
+            </div>
+            <p class="hint">Prezzo fisso = tariffa oraria × ore × urgenza. La forchetta di valore aggiunge un margine per competenza, rischio e risultato che consegni.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Profiles (Pro: unlimited) -->
+      <section class="card profiles-card" aria-labelledby="profilesTitle">
+        <div class="row-between">
+          <h2 id="profilesTitle" style="margin:0">Profili tariffa <span class="pro-badge" id="profilesBadge">1 GRATIS</span></h2>
+          <button class="btn btn-sm" id="compareToggle" type="button">Confronta profili</button>
+        </div>
+        <p class="hint">Salva configurazioni diverse, come "Sviluppo web", "Design", "Consulenza", e ricaricale in seguito. Il piano gratuito salva un profilo; Pro è illimitato.</p>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="profileName" placeholder="Nome del profilo (es. Sviluppo web)" maxlength="40" aria-label="Nome del profilo" style="flex:1;min-width:180px">
+          <button class="btn btn-primary" id="saveProfileBtn" type="button">Salva profilo</button>
+          <button class="btn" id="reportBtn" type="button">Report tariffe (PDF)</button>
+        </div>
+        <ul class="profile-list" id="profileList" aria-live="polite"></ul>
+
+        <div class="compare hidden" id="comparePanel">
+          <h3>Confronta due profili</h3>
+          <div class="grid-2">
+            <div class="field">
+              <label for="compareA">Profilo A</label>
+              <select id="compareA"></select>
+            </div>
+            <div class="field">
+              <label for="compareB">Profilo B</label>
+              <select id="compareB"></select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="compareTable">
+              <thead><tr><th>Metrica</th><th class="num" id="compareHeadA">A</th><th class="num" id="compareHeadB">B</th><th class="num">Differenza</th></tr></thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Passa a Pro <span class="pro-badge">A VITA</span></h3>
+        <ul>
+          <li>Profili tariffa salvati illimitati</li>
+          <li>Report tariffe stampabile (PDF)</li>
+          <li>Confronta i profili affiancati</li>
+          <li>Aggiornamenti a vita, un solo pagamento</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Passa a Pro – <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Fissa i prezzi con sicurezza</h3>
+        <p class="hint">Valori di riferimento sulle tariffe, consigli per le proposte e nuovi strumenti gratuiti per freelance. Niente spam.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="tu@email.com" aria-label="Indirizzo email" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Abbonati</button>
+        </form>
+        <p class="hint tiny">Niente spam. Annulli l'iscrizione quando vuoi.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+
+  <!-- Partners (affiliate) – rendered by app.js only when links are configured -->
+  <section class="card partners hidden" id="partnersSection" aria-labelledby="partnersTitle">
+    <h2 id="partnersTitle">Fatti pagare prima, in tutto il mondo</h2>
+    <p class="hint">Strumenti che i freelance usano spesso per fatturare e ricevere denaro da clienti internazionali. Sono link di affiliazione: potremmo ricevere una commissione senza costi aggiuntivi per te.</p>
+    <div class="grid-3" id="partnerGrid"></div>
+  </section>
+</main>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Modi più comuni di usare RateCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/it/freelance-web-developer-hourly-rate">Calcolatore tariffa oraria per sviluppatori web freelance</a></li>
+      <li><a href="/it/graphic-designer-hourly-rate-calculator">Calcolatore tariffa oraria per graphic designer</a></li>
+      <li><a href="/it/freelance-writer-rate-calculator">Calcolatore tariffe per scrittori freelance</a></li>
+      <li><a href="/it/consultant-hourly-rate-calculator">Calcolatore tariffa oraria per consulenti</a></li>
+      <li><a href="/it/video-editor-freelance-rate">Calcolatore tariffe per video editor freelance</a></li>
+      <li><a href="/it/virtual-assistant-hourly-rate">Calcolatore tariffa oraria per assistenti virtuali</a></li>
+      <li><a href="/it/day-rate-calculator">Calcolatore tariffa giornaliera freelance</a></li>
+      <li><a href="/it/contractor-vs-full-time-salary-calculator">Calcolatore collaboratore esterno vs stipendio a tempo pieno</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <div class="features">
+    <div class="feature"><div class="ic">⚡</div><h3>Risultati immediati in tempo reale</h3><p>Ogni numero si aggiorna mentre scrivi: obiettivi orari, giornalieri, settimanali e mensili a colpo d'occhio.</p></div>
+    <div class="feature"><div class="ic">🧮</div><h3>Conti reali</h3><p>Tiene conto di imposte, spese, margine di sicurezza e ore non fatturabili, non solo stipendio ÷ 2,080.</p></div>
+    <div class="feature"><div class="ic">📦</div><h3>Preventivi di progetto</h3><p>Trasforma la tua tariffa in un prezzo fisso con moltiplicatori di urgenza e una forchetta basata sul valore.</p></div>
+    <div class="feature"><div class="ic">🔒</div><h3>Privato per natura</h3><p>Non viene caricato nulla. I tuoi dati restano nel browser e nel link di condivisione che scegli di inviare.</p></div>
+  </div>
+
+  <h2>Come calcolare la tua tariffa oraria freelance</h2>
+  <p>La maggior parte dei nuovi freelance fissa la tariffa guardando quanto chiedono gli altri o dividendo un vecchio stipendio per 2,080 ore. Entrambi gli approcci fanno perdere soldi senza che te ne accorga. Una tariffa sostenibile parte a ritroso da quanto ti serve guadagnare, e questo calcolatore segue questa logica passo dopo passo:</p>
+  <ol>
+    <li><strong>Parti dal tuo obiettivo netto.</strong> È ciò che vuoi davvero tenerti ogni anno: l'equivalente di uno stipendio netto.</li>
+    <li><strong>Lordizza per le imposte.</strong> Dividi l'obiettivo netto per (1 − aliquota). Con un'aliquota effettiva del 25%, per tenerti $60,000 servono $80,000 di utile ante imposte.</li>
+    <li><strong>Aggiungi le spese dell'attività.</strong> Abbonamenti software, hardware, assicurazione, coworking, commercialista, marketing, corsi. Li paga la tua attività prima che tu veda un centesimo.</li>
+    <li><strong>Aggiungi un margine.</strong> Un margine del 10–20% copre i mesi lenti, i pagamenti in ritardo e i costi imprevisti. Senza, un trimestre tranquillo ti mette in difficoltà per tutto l'anno.</li>
+    <li><strong>Conta onestamente le tue ore fatturabili.</strong> Ore fatturabili al giorno × giorni lavorativi a settimana × (52 − settimane di stop). Cinque ore fatturabili al giorno, cinque giorni a settimana e sei settimane di stop fanno 1,150 ore, non 2,080.</li>
+    <li><strong>Dividi.</strong> Fatturato lordo necessario ÷ ore fatturabili = la tua tariffa oraria minima. Tutto ciò che sta sopra è utile; qualsiasi cifra sotto significa che stai sovvenzionando i tuoi clienti.</li>
+  </ol>
+  <p>La barra di ripartizione mostra come ogni dollaro di fatturato si divide tra netto, imposte, spese e margine: un utile bagno di realtà quando una tariffa sembra "troppo alta". Di solito solo il 55–70% di ciò che fatturi finisce in tasca tua.</p>
+
+  <h2>Errori comuni nel fissare una tariffa freelance</h2>
+  <h3>Copiare il tuo vecchio stipendio da dipendente</h3>
+  <p>L'equivalente orario di un dipendente nasconde molto: imposte e contributi pagati dal datore di lavoro, ferie pagate, attrezzatura, formazione e 40 ore fatturabili costanti a settimana. Da freelance finanzi tutto da solo, quindi pareggiare la vecchia cifra oraria significa di solito un taglio reale del 30–50%.</p>
+  <h3>Dimenticare il tempo non fatturabile</h3>
+  <p>Ricerca clienti, proposte, call, fatturazione, contabilità e apprendimento di nuovi strumenti consumano facilmente il 30–40% di una settimana lavorativa. Se fissi i prezzi come se ogni ora fosse fatturabile, il tuo reddito effettivo è molto più basso di quanto suggerisca la tariffa. Il calcolatore mostra la quota non fatturabile risultante così la vedi chiaramente.</p>
+  <h3>Ignorare le imposte finché non arriva il conto</h3>
+  <p>In quasi tutti i Paesi i lavoratori autonomi pagano sia la quota a carico del dipendente sia quella del datore di lavoro dei contributi, più l'imposta sul reddito, spesso con acconti periodici. Includi la tua aliquota effettiva nel prezzo fin dal primo giorno e metti da parte i soldi man mano che fatturi.</p>
+  <h3>Fissare i prezzi senza margine</h3>
+  <p>I clienti pagano in ritardo, i progetti si fermano, i portatili si rompono. Un margine di sicurezza non è avidità: è la differenza tra un'attività e un hobby.</p>
+
+  <h2>Prezzi a ore, a progetto o con retainer</h2>
+  <p>La tariffa <strong>a ore</strong> è trasparente e ti tutela quando il perimetro non è chiaro, ma limita il reddito alle ore lavorate e penalizza l'efficienza. Il <strong>prezzo (fisso) a progetto</strong> è più facile da accettare per i clienti e ti permette di guadagnare di più man mano che diventi più veloce, a patto di definire bene il perimetro e includere nel prezzo i giri di revisione. I <strong>retainer</strong> — un compenso mensile fisso per la disponibilità continuativa o per un pacchetto di ore — rendono regolare il flusso di cassa e di solito si prezzano con un piccolo sconto in cambio dell'impegno. Molti freelance usano tutti e tre i modelli: a ore per discovery e manutenzione, prezzi fissi per deliverable definiti, retainer per i clienti di lungo periodo. Qualunque sia il modello, la soglia oraria di questo calcolatore è il numero sotto cui nessun preventivo dovrebbe scendere.</p>
+
+  <h2>Come aumentare le tariffe con i clienti esistenti</h2>
+  <ul>
+    <li><strong>Dai il preavviso.</strong> 30–60 giorni è lo standard; annuncia la nuova tariffa per i lavori che iniziano dopo una data precisa.</li>
+    <li><strong>Parti dal valore, non dai costi.</strong> Parla dei risultati ottenuti e delle competenze acquisite, non dell'affitto che aumenta.</li>
+    <li><strong>Sii breve e sicuro di te.</strong> Un'email di due paragrafi funziona meglio di una lunga giustificazione. La maggior parte dei clienti si aspetta aumenti periodici.</li>
+    <li><strong>Offri un'alternativa.</strong> Un retainer o un pacchetto prepagato a una tariffa leggermente più bassa rende l'aumento più facile da accettare.</li>
+    <li><strong>Aumenta prima con i nuovi clienti.</strong> Prova la nuova tariffa sulle nuove proposte, poi adegua i clienti esistenti.</li>
+  </ul>
+
+  <h2>Una nota sui valori di riferimento</h2>
+  <p>Le "tariffe medie freelance" pubblicate variano enormemente per Paese, specializzazione, anzianità e modalità del sondaggio, quindi considerale un contesto, non un obiettivo. Questo calcolatore non usa dati di riferimento; calcola la tariffa che i <em>tuoi</em> numeri richiedono. Se il risultato è molto sopra quanto paga il tuo mercato, di solito la soluzione è aumentare l'efficienza fatturabile, ridurre le spese, specializzarti o puntare a clienti con budget più alti, non accettare una tariffa che non ti sostiene.</p>
+
+  <h2>Domande frequenti</h2>
+  <div class="faq">
+    <details>
+      <summary>Come funziona il calcolatore della tariffa oraria freelance?</summary>
+      <p>Parte dal reddito netto che desideri, aggiunge le imposte che dovrai pagarci sopra, aggiunge le spese annuali dell'attività e un margine di utile, poi divide questo fatturato lordo per il numero di ore che puoi realisticamente fatturare in un anno (ore fatturabili al giorno × giorni lavorativi a settimana × settimane lavorative). Il risultato è la tariffa oraria minima per raggiungere il tuo obiettivo.</p>
+    </details>
+    <details>
+      <summary>Qual è una buona tariffa oraria freelance?</summary>
+      <p>Non esiste un numero universale. Una buona tariffa è quella che copre reddito obiettivo, imposte, spese e tempo non pagato, e che il tuo mercato è disposto a pagare. Come verifica di massima, molti freelance si collocano tra 1.5× e 3× l'equivalente orario di un lavoro dipendente comparabile, perché devono coprire da soli benefit, tempi morti e costi generali. Usa il calcolatore per la soglia minima, poi aumenta in base a esperienza, specializzazione e domanda.</p>
+    </details>
+    <details>
+      <summary>Conviene fatturare a ore o a progetto?</summary>
+      <p>La fatturazione a ore è la più semplice per lavori aperti o poco definiti. Il prezzo fisso a progetto premia la tua efficienza ed è più facile da approvare per i clienti, ma ti accolli il rischio di sottostimare. Molti freelance calcolano un prezzo fisso da ore stimate × tariffa oraria, poi aggiungono un margine per valore e rischio. L'assistente preventivo di questo strumento fa esattamente questo.</p>
+    </details>
+    <details>
+      <summary>Quante ore all'anno può fatturare davvero un freelance?</summary>
+      <p>Molte meno di 2,080. Tra ricerca clienti, amministrazione, fatturazione, formazione e pause tra un progetto e l'altro, la maggior parte dei freelance a tempo pieno fattura da 1,000 a 1,400 ore l'anno, circa 4–6 ore fatturabili per giorno lavorativo. Il calcolatore usa di default 5 ore fatturabili al giorno, 5 giorni a settimana e 6 settimane di stop, cioè 1,150 ore fatturabili.</p>
+    </details>
+    <details>
+      <summary>Devo includere le imposte nella mia tariffa oraria?</summary>
+      <p>Sì. Da freelance nessuno trattiene le imposte per te, quindi la tua tariffa deve coprire imposta sul reddito, contributi da lavoro autonomo o previdenziali ed eventuali imposte locali sull'attività. Inserisci la tua aliquota effettiva (media) come percentuale e il calcolatore lordizza il reddito in modo che ciò che resta dopo le imposte corrisponda al tuo obiettivo.</p>
+    </details>
+    <details>
+      <summary>Il calcolatore di tariffe freelance è gratis?</summary>
+      <p>Sì. Tutti i calcoli, l'assistente preventivo, la copia del riepilogo e il link di condivisione sono gratuiti senza registrazione e tutto funziona nel tuo browser. Un upgrade Pro opzionale una tantum aggiunge profili tariffa salvati illimitati, un report tariffe in PDF stampabile e il confronto affiancato dei profili.</p>
+    </details>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Una raccolta di strumenti gratuiti e privati che funzionano interamente nel tuo browser. RateCalc è il calcolatore di tariffe freelance della famiglia, creato e gestito da Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Altri strumenti gratuiti</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Fatture</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app" class="current">RateCalc · Tariffe freelance</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · Codici QR</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compressore di immagini</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app">GrowthCalc · Interesse composto</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Subnet IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockup di screenshot</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockup di chat e post</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slide per caroselli</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formati social</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Cornici e mockup per foto</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Giveaway su Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Ricerca IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Ridimensiona immagini e video</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · RateCalc. Non è consulenza finanziaria o fiscale.</span>
+      <span><a href="/it/privacy" data-i18n-href="/it/privacy">Privacy</a> · <a href="/it/terms" data-i18n-href="/it/terms">Termini</a> · <a href="#" data-action="cookie-settings">Impostazioni cookie</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Printable rate report (only visible when printing) -->
+<section class="report-print" id="reportPrint" aria-hidden="true">
+  <div class="report-head">
+    <div class="report-brand">RateCalc</div>
+    <h1>Report tariffa freelance</h1>
+    <p id="reportMeta"></p>
+  </div>
+  <h2>Dati</h2>
+  <table id="reportInputs"><tbody></tbody></table>
+  <h2>Risultati</h2>
+  <table id="reportResults"><tbody></tbody></table>
+  <h2>Ripartizione del fatturato</h2>
+  <table id="reportBreakdown"><tbody></tbody></table>
+  <h2>Preventivo di progetto</h2>
+  <table id="reportQuote"><tbody></tbody></table>
+  <p class="report-foot">Generato con RateCalc – calcolatore della tariffa oraria freelance. Le cifre sono stime basate sui dati sopra e non costituiscono consulenza finanziaria o fiscale.</p>
+</section>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Chiudi">✕</button>
+    <h3 id="proTitle">Passa a RateCalc Pro <span class="pro-badge">A VITA</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>una tantum</small></div>
+    <ul>
+      <li>Profili tariffa illimitati</li>
+      <li>Report tariffe stampabile (PDF)</li>
+      <li>Confronta i profili affiancati</li>
+      <li>Aggiornamenti a vita</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Passa a Pro</button>
+    <p class="hint" style="margin-top:12px">Hai già acquistato? <a href="#" data-action="toggle-license">Inserisci la chiave di licenza</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Chiave di licenza" aria-label="Chiave di licenza"><button class="btn" data-action="activate-license">Attiva</button></div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

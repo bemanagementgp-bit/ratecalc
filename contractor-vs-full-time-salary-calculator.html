@@ -16,7 +16,7 @@
   <meta name="twitter:title" content="Contractor vs Full-Time Salary Calculator – What to Charge as a Contractor | RateCalc">
   <meta name="twitter:description" content="Compare a full-time salary with contracting: the hourly and day rate a contractor must charge to match an employee salary, benefits and paid time off. Free.">
   <meta name="twitter:image" content="https://ratecalc-tool.vercel.app/favicon.svg">
-  <meta name="theme-color" content="#f97316">
+  <meta name="theme-color" content="#050403">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,13 +26,25 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
   <script src="/monetize.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Contractor vs Full-Time Salary Calculator – What to Charge as a Contractor | RateCalc","description":"Compare a full-time salary with contracting: the hourly and day rate a contractor must charge to match an employee salary, benefits and paid time off. Free.","url":"https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator","isPartOf":{"@type":"WebSite","name":"RateCalc","url":"https://ratecalc-tool.vercel.app/"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RateCalc","item":"https://ratecalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Contractor vs Full-Time Salary Calculator","item":"https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert a salary to a contractor hourly rate?","acceptedAnswer":{"@type":"Answer","text":"Add the employer-paid benefits and taxes you now cover, add equipment and a buffer for gaps, then divide by the hours you will really bill in a year. This calculator does each step; the common shortcut of salary ÷ 1,000 (so $100k → $100/hour) is a rough approximation of the same logic."}},{"@type":"Question","name":"Is a 1099 contractor rate of 1.5× the salary hourly enough?","acceptedAnswer":{"@type":"Answer","text":"It is often the minimum. With health insurance, both halves of payroll tax and unpaid time off, break-even frequently lands between 1.5× and 2.5× the employee hourly equivalent."}},{"@type":"Question","name":"Does this apply outside the US?","acceptedAnswer":{"@type":"Answer","text":"The logic does. Replace the tax rate and benefit costs with your country's figures (for example national insurance and pension contributions) and switch the currency."}},{"@type":"Question","name":"Can I compare two scenarios side by side?","acceptedAnswer":{"@type":"Answer","text":"Yes, with RateCalc Pro: save a profile for each option (for example \"contract at 80/h\" and \"contract at 95/h\") and open the compare table."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="es" href="https://ratecalc-tool.vercel.app/es/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="pt" href="https://ratecalc-tool.vercel.app/pt/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="fr" href="https://ratecalc-tool.vercel.app/fr/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="de" href="https://ratecalc-tool.vercel.app/de/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="it" href="https://ratecalc-tool.vercel.app/it/contractor-vs-full-time-salary-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://ratecalc-tool.vercel.app/contractor-vs-full-time-salary-calculator">
+  <!-- hreflang:end -->
 </head>
 <body>
 
@@ -45,7 +57,7 @@
     </a>
     <nav class="nav" aria-label="Main">
       <details class="more-tools">
-        <summary class="btn btn-ghost btn-sm">More tools ▾</summary>
+        <summary class="btn btn-ghost btn-sm" aria-label="More tools"><span class="mt-label">More tools</span> ▾</summary>
         <div class="menu">
           <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Invoices</small></a>
           <a href="https://ratecalc-tool.vercel.app" class="current"><span class="mi">R</span>RateCalc<small>Freelance rates</small></a>
@@ -59,14 +71,16 @@
           <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Social formats</small></a>
           <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Photo frames & mockups</small></a>
           <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Instagram giveaways</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>IP lookup</small></a>
           <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Image & video resizer</small></a>
         </div>
       </details>
       <span class="sep" aria-hidden="true"></span>
       <span class="brand-by">by <b>Be Management</b></span>
-      <button class="btn btn-sm hidden" id="installBtn" onclick="installApp()" title="Install this tool as an app">⤓ Install</button>
-      <button class="btn btn-primary btn-sm" onclick="openPro('nav')" id="navProBtn">Pro</button>
-      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Install this tool as an app">⤓ Install</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav" id="navProBtn">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Toggle theme">◐</button>
     </nav>
     </div>
   </div>
@@ -261,12 +275,12 @@
           <li>Compare profiles side-by-side</li>
           <li>Lifetime updates, one payment</li>
         </ul>
-        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span></button>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Get Pro – <span data-pro-price>$9</span></button>
       </div>
       <div class="card lead-card" id="leadCard" hidden>
         <h3>Price with confidence</h3>
         <p class="hint">Rate benchmarks, proposal tips and new free tools for freelancers. No spam.</p>
-        <form class="lead-form" onsubmit="return subscribeNewsletter(event)">
+        <form class="lead-form" data-action="newsletter">
           <input type="email" name="email" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
           <button class="btn btn-primary" type="submit">Subscribe</button>
@@ -345,12 +359,13 @@
         <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Social formats</a></li>
         <li><a href="https://framelab-tool.vercel.app">Frame Lab · Photo frames & mockups</a></li>
         <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Instagram giveaways</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · IP lookup</a></li>
         <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Image & video resizer</a></li>
       </ul>
     </div>
     <div class="footer-meta">
       <span>© <span data-year></span> Be Management · RateCalc. Not financial or tax advice.</span>
-      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+      <span><a href="/privacy" data-i18n-href="/privacy">Privacy</a> · <a href="/terms" data-i18n-href="/terms">Terms</a> · <a href="#" data-action="cookie-settings">Cookie settings</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
     </div>
   </div>
 </footer>
@@ -375,7 +390,7 @@
 
 <div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
   <div class="card">
-    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Close">✕</button>
     <h3 id="proTitle">Upgrade to RateCalc Pro <span class="pro-badge">LIFETIME</span></h3>
     <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
     <ul>
@@ -384,12 +399,12 @@
       <li>Compare profiles side-by-side</li>
       <li>Lifetime updates</li>
     </ul>
-    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
-    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
-    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+    <button class="btn btn-primary btn-block" data-action="checkout">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" data-action="toggle-license">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" data-action="activate-license">Activate</button></div>
   </div>
 </div>
-<script>(function(){var q="inc=100000&cur=USD&exp=15000&tax=30&mar=10&hpd=6&dpw=5&wo=6&qh=160&rush=1";if(q&&!location.search){try{history.replaceState(null,"",location.pathname+"?"+q+location.hash);}catch(e){}}})();</script>
+<script src="/preset.js" data-q="inc=100000&amp;cur=USD&amp;exp=15000&amp;tax=30&amp;mar=10&amp;hpd=6&amp;dpw=5&amp;wo=6&amp;qh=160&amp;rush=1"></script>
 <script src="/app.js"></script>
 </body>
 </html>
