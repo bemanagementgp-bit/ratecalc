@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "destination": "https://tools.bemanagement.pro/ratecalc/",
+      "statusCode": 301
+    },
+    {
       "source": "/:path*",
       "destination": "https://tools.bemanagement.pro/ratecalc/:path*",
       "statusCode": 301
